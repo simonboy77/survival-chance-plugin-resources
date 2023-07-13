@@ -1,0 +1,14 @@
+.gradle
+build
+.idea/
+.project
+.settings/
+.classpath
+nbactions.xml
+nb-configuration.xml
+nbproject/
+
+# Gradle idea plugin files 
+dps-calculator.iml
+dps-calculator.ipr
+dps-calculator.iws

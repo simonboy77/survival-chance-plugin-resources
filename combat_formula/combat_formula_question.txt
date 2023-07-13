@@ -1,0 +1,45 @@
+Hey, I am making a plugin to calculate survival chance while in combat with a monster. I've gotten to the point where i need to use the combat formulas to get the chance of the monster actually hitting the player. I have used the wiki and your combat formulas thread but some things are mismatching and i was hoping you could help me.
+
+-----------------------------------------
+
+1. Defending player effective magic level
+wiki: 
+{
+    double effectiveMagic = (visibleMagicLvl * 0.7) + (visibleDefenceLvl * 0.3) + 8.0
+}
+
+spreadsheet:
+{
+    double effectiveMagic = visibleMagicLvl
+    effectiveMagic = floor(effectiveMagic * prayerMultiplier)
+    effectiveMagic = floor(effectiveMagic * 0.7)
+    
+    effectiveMagic += floor(effectiveDefence * 0.3)
+    effectiveMagic += 8.0
+}
+
+wiki doesn't use prayer boost and uses the visibleDefenceLvl instead of the effectiveDefence. Is their information newer than yours or just incomplete? On the wiki page the only source related to this formula is your thread.
+
+------------------------------------------
+
+2. Attacking monster effective magic level
+wiki:
+{
+    double effectiveMagic = monsterMagicLvl + 9.0
+}
+
+spreadsheet: (Doesn't list a specific way for monsters so using the general one)
+{
+    double effectiveMagic = monsterMagicLvl + stanceBonus + 8.0
+}
+
+In the spreadsheet you mention: "For NPC rolls, always use the default stance bonus of +9.", ok makes sense, but why does the wiki skip the +8? Wiki bad? Wiki know what bitterkoekje not know in 2015?
+
+------------------------------------------
+
+Links:
+https://oldschool.runescape.wiki/w/Magic#Magic_accuracy
+https://www.rune-server.ee/runescape-development/rs2-server/informative-threads/688072-archive-combat-formulas.html
+
+
+Thank you for the work you have done for the community and have a nice day!

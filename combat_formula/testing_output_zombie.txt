@@ -1,0 +1,12 @@
+https://oldschool.runescape.wiki/w/Goblin
+uses crush
+
+defence lvl 94
+defensive attack style
+crush defence +192
+
+zombie lvl 24 https://oldschool.runescape.wiki/w/Zombie#Level_24
+attack speed 5
+
+don't forgot that 1/4 of its hits are actually zero!! hit range 0-3
+

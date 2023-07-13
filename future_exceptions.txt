@@ -1,0 +1,33 @@
+Hit Chance:
+https://oldschool.runescape.wiki/w/Acidic_Bloodveld
+https://oldschool.runescape.wiki/w/Volatile_Baboon
+
+Attack Speed:
+https://oldschool.runescape.wiki/w/Zulrah#Magma (it supposedly waits several seconds to do an unblockable attack)
+
+Min Damage:
+https://oldschool.runescape.wiki/w/General_Graardor/Strategies (ranged attacks mins a 15)
+https://oldschool.runescape.wiki/w/Jal-MejJak (lava balls min 5 damage)
+https://oldschool.runescape.wiki/w/K%27ril_Tsutsaroth
+
+Max Damage:
+Slayer monster, like basilisks, killer watts or whatever else
+dharoks, inferno boss, night beast special
+
+player distance from the npc also affects whether they can hit with melee, and some don't attack with range/magic when in melee range
+
+Protection items:
+wyverns, dragons, slayer monsters, trolls
+
+
+Not targeting player (i think?)
+https://oldschool.runescape.wiki/w/Scarab_Swarm_(Tombs_of_Amascut)
+
+
+
+research:
+https://oldschool.runescape.wiki/w/Thrower_Troll
+https://oldschool.runescape.wiki/w/Guardian_Drake (no range max hit)
+
+
+https://oldschool.runescape.wiki/w/Special:Lookup?type=npc&id=

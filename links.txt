@@ -1,0 +1,4 @@
+https://github.com/0xNeffarion/osrsreboxed-db
+
+plugin development starting guide
+https://youtu.be/mB5Wxfx0Ork

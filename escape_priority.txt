@@ -1,0 +1,24 @@
+Test 1
+equipment: ring of life, phoenix
+prayers: redemption
+hp: 10
+
+What happens when going to 9?
+1. Phoenix triggers
+2. Redemption triggers
+3. Ring of Life triggers
+
+
+Test 2
+equipment: escape crystal, phoenix
+prayers: redemption
+hp: 10
+
+What happens when going to 9?
+1. Phoenix triggers
+2. Redemption triggers
+3. Escape crystal triggers
+
+
+
+I have to test with defence cape

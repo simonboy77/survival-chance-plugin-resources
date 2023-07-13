@@ -1,0 +1,18 @@
+https://web.archive.org/web/20190905124128/http://webcache.googleusercontent.com/search?q=cache:http://services.runescape.com/m=forum/forums.ws?317,318,712,65587452
+https://www.rune-server.ee/runescape-development/rs2-server/informative-threads/688072-archive-combat-formulas.html
+https://docs.google.com/spreadsheets/d/1wBXIlvAmqoQpu5u9XBfD4B0PW7D8owyO_CnRDiTHBKQ/edit#gid=158500257
+
+https://oldschool.runescape.wiki/w/Damage_per_second/Melee#Step_three:_Calculate_the_effective_attack_level
+https://oldschool.runescape.wiki/w/Damage_per_second/Melee#Step_six:_Calculate_the_hit_chance
+https://oldschool.runescape.wiki/w/Magic#Magic_accuracy
+https://oldschool.runescape.wiki/w/RuneScape:Sandbox/combat_pseudocode
+
+// The magic section is not matching between wiki and the thread:
+// section                              wiki                            thread
+// monster effective magic level        +8                              +9
+// player effective magic level         use regular defence lvl         use effective defence lvl
+// player effective magic level         +8                              +nothing
+
+
+
+https://oldschool.runescape.wiki/?title=Wizard&diff=245831&oldid=236236

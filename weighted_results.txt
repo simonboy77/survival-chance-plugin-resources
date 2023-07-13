@@ -1,0 +1,80 @@
+hp 1
+minHit 1, maxHit 1
+4 hits
+hitChance 0.4
+deathDamage = 1
+
+
+
+
+hitNum = 0
+curDamage = 0 + 1 = 1
+hitChance = 1.0 * 0.4 = 0.4
+
+if(curDamage >= deathDamage) (YES)
+deathChance += hitChance (total deathChance = 0.4)
+next_hit(hitChance = 1.0 * (1.0 - 0.4) = 0.6, damage = 0)
+
+
+hitNum = 1
+curDamage = 0 + 1 = 1
+hitChance = 0.6 * 0.4 = 0.24
+
+if(curDamage >= deathDamage) (YES)
+deathChance += hitChance (total deathChance = 0.64)
+next_hit(hitChance = 0.6 * (1.0 - 0.4) = 0.36, damage = 0)
+
+
+hitNum = 2
+curDamage = 0 + 1 = 1
+hitChance = 0.36 * 0.4 = 0.144
+
+if(curDamage >= deathDamage) (YES)
+deathChance += hitChance (total deathChance = 0.784)
+nextHit(hitChance = 0.36 * (1.0 - 0.4) = 0.216, damage = 0)
+
+
+hitNum = 3
+curDamage = 0 + 1 = 1
+hitChance = 0.216 * 0.4 = 0.0864
+
+if(curDamage >= deathDamage) (YES)
+deathChance += hitChance (total deathChance = 0.8704)
+nextHit(hitChance = 0.216 * (1.0 - 0.4) = 0.1296)
+
+hitNum = 4
+survivalChance = hitChance (total = 0.1296)
+
+
+in the end
+deathChance =   0.8704
+surviveChance = 0.1296
+              + 1.0
+
+
+
+
+safety: 40.0, escape: 40.0, die: 20.0, totalHits: 0.0, iterations: 3
+
+minHit 10, maxHit 11, hitChance 0.5
+11 hp, 1 hit
+
+11 == death: 0.5 deathChance, 0.5 survivalChance
+10 == trigger: 0.5 triggerChance, 0.5 survivalChance
+
+total 1.0 surv, 0.5 escape, 0.5 death, 
+        50%     25%         25%
+
+
+
+
+slow:
+com.simonboy77.PlayerState - safety: 15.384615384615385, escape: 69.23076923076923, die: 15.384615384615385, totalHits: 13.0, iterations: 3
+
+fast:
+com.simonboy77.PlayerState - safety: 15.384615384615385, escape: 69.23076923076923, die: 15.384615384615385, totalHits: 13.0, iterations: 1
+
+weighted:
+com.simonboy77.PlayerState - safety: 15.384615384615385, escape: 69.23076923076923, die: 15.384615384615385, totalHits: 0.0, iterations: ?
+
+

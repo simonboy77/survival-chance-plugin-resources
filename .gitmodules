@@ -1,0 +1,3 @@
+[submodule "own_monster_json/osrsbox-enchanced-monsters"]
+	path = own_monster_json/osrsbox-enchanced-monsters
+	url = git@github.com:simonboy77/osrsbox-enchanced-monsters.git

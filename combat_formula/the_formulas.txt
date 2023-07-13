@@ -1,0 +1,18 @@
+MonsterEffectiveMagic:
+wiki_method:    MagicLvl + 9
+thread_method:  MagicLvl + StanceBonus(+9) + 8
+
+PlayerEffectiveDefence:
+wiki_method:    floor(VisDefenceLvl * prayerMultiplier) + stanceBonus + 8 (based on effective attack formula)
+thread method:  floor(VisDefenceLvl * prayerMultiplier) + stanceBonus + 8
+
+PlayerEffectiveMagicDefence: (formula for Attack is different)
+wiki_method:    MagicLvl * 0.7 + DefenceLvl * 0.3 + 8 (does not apply prayer)
+thread_method:  floor(MagicLvl * 0.7) + floor(EffectiveDefence * 0.3)   (applies prayer bonus afterwards)
+
+RollCalculations: (Defence & Attack)
+all:            EffectiveMagic * (MagicAttack + 64)
+
+HitChance:
+all:            if(AttackRoll > DefenceRoll)  { HitChance = 1 - (DefenceRoll + 2) / (2 * AttackRoll + 1) }
+all:            if(DefenceRoll >= AttackRoll) { HitChance = AttackRoll / (2 * (DefenceRoll + 1)) }

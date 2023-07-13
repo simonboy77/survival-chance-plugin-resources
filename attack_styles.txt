@@ -1,0 +1,293 @@
+https://oldschool.runescape.wiki/w/Combat_Options
+
+private int getAttackStyleDefenceBonus(int attackStyle, int weaponType)
+    {
+        final int UNARMED = 0;
+        final int AXE = 1;
+        final int BLUNT = 2;
+        final int BOW = 3;
+        final int CLAW = 4;
+        final int CROSSBOW = 5;
+        final int SALAMANDER = 6;
+        final int CHINCHOMPA = 7;
+        final int GUN = 8; // guestimated
+        final int SLASH_SWORD = 9;
+        final int TWO_HANDED_SWORD = 10;
+        final int PICKAXE = 11;
+        final int POLEARM = 12;
+        final int POLESTAFF = 13;
+        // 14 is unknown for now
+        final int SPEAR = 15;
+        final int SPIKED = 16;
+        final int STAB_SWORD = 17;
+        final int STAFF = 18;
+        final int THROWN = 19;
+        final int WHIP = 20;
+        final int BLADED_STAFF = 21; // guestimated
+        final int SCYTHE = 22; // guestimated
+        final int POWERED_STAFF = 23;
+        final int BANNER = 24;
+        final int BLASTER = 25; // guestimated
+        final int BLUDGEON = 26; // guestimated
+        final int BULWARK = 27; // guestimated
+        final int POWERED_WAND = 28; // guestimated
+        final int PARTISAN = 29;
+
+        switch(weaponType)
+        {
+            case UNARMED:
+            {
+                // attackStyle melee
+                // 0 = accurate
+                // 1 = aggressive
+                // 3 = defensive
+            } break;
+
+            case AXE:
+            {
+                // attackStyle melee
+                // 0 = accurate
+                // 1 = aggressive
+                // 2 = aggressive
+                // 3 = defensive
+            } break;
+
+            case BLUNT:
+            {
+                // attackStyle
+                // 0 = accurate
+                // 1 = aggressive
+                // 3 = defensive
+            } break;
+
+            case BOW:
+            {
+                // attackStyle
+                // 0 = accurate
+                // 1 = rapid
+                // 3 = longrange
+            } break;
+
+            case CLAW:
+            {
+                // attackStyle
+                // 0 = accurate
+                // 1 = aggressive
+                // 2 = controlled
+                // 3 = defensive
+            } break;
+
+            case CROSSBOW:
+            {
+                // attackStyle
+                // 0 = accurate
+                // 1 = rapid
+                // 3 = longrange
+            } break;
+
+            case SALAMANDER:
+            {
+                // attackStyle
+                // 0 = aggressive
+                // 1 = accurate
+                // 2 = defensive (+3 defence)
+            } break;
+
+            case CHINCHOMPA: // Gives no defence or magic boost
+            {
+                // attackStyle
+                // 0 = short fuse
+                // 1 = medium fuse
+                // 3 = long fuse
+            } break;
+
+            case GUN: // Gives no defence or magic boost
+            {
+                // attackStyle
+                // 0 = aim and fire
+                // 1 = aggresive
+            } break;
+
+            case LONG_SWORD:
+            {
+                // attackStyle
+                // 0 = accurate
+                // 1 = aggressive
+                // 2 = controlled
+                // 3 = defensive
+            } break;
+
+            case TWO_HANDED_SWORD:
+            {
+                // attackStyle melee
+                // 0 = accurate
+                // 1 = aggressive
+                // 2 = aggressive
+                // 3 = defensive
+            } break;
+
+            case PICKAXE:
+            {
+                // attackStyle
+                // 0 = accurate
+                // 1 = aggressive
+                // 2 = aggressive
+                // 3 = defensive
+            } break;
+
+            case POLEARM:
+            {
+                // attackStyle
+                // 0 = controlled
+                // 1 = aggressive
+                // 3 = defensive
+            } break;
+
+            case POLESTAFF:
+            {
+                // attackStyle
+                // 0 = accurate
+                // 1 = aggressive
+                // 3 = defensive
+            } break;
+
+            case SPEAR:
+            {
+                // attackStyle
+                // 0 = controlled
+                // 1 = controlled
+                // 2 = controlled
+                // 3 = defensive
+            } break;
+
+            case SPIKED:
+            {
+                // attackStyle
+                // 0 = accurate
+                // 1 = aggressive
+                // 2 = controlled
+                // 3 = defensive
+            } break;
+
+            case STAB_SWORD:
+            {
+                // attackStyle
+                // 0 = accurate
+                // 1 = aggressive
+                // 2 = aggressive
+                // 3 = defensive
+            } break;
+
+            case STAFF:
+            {
+                // attackStyle
+                // 0 = accurate (melee)
+                // 1 = aggressive (melee)
+                // 3 = defensive (melee)
+                // 4 = autocast (defensive or not Varbits.DEFENSIVE_CASTING_MODE)
+            } break;
+
+            case THROWN:
+            {
+                // attackStyle
+                // 0 = accurate
+                // 1 = rapid
+                // 3 = longrange
+            } break;
+
+            case WHIP:
+            {
+                // attackStyle
+                // 0 = accurate
+                // 1 = controlled
+                // 3 = defensive
+            } break;
+
+            case BLADED_STAFF:
+            {
+                // attackStyle
+                // 0 = accurate (melee)
+                // 1 = aggressive (melee)
+                // 3 = defensive (melee)
+                // 4 = autocast (defensive or not Varbits.DEFENSIVE_CASTING_MODE)
+            } break;
+
+            case SCYTHE:
+            {
+                // attackStyle
+                // 0 = accurate
+                // 1 = aggressive
+                // 2 = aggressive
+                // 3 = defensive
+            } break;
+
+            case POWERED_STAFF:
+            {
+                // attackStyle
+                // 0 = accurate
+                // 1 = accurate
+                // 3 = longrange
+            } break;
+
+            case BANNER:
+            {
+                // attackStyle
+                // 0 = accurate
+                // 1 = aggressive
+                // 2 = controlled
+                // 3 = defensive
+            } break;
+
+            case BLASTER:
+            {
+                // attackStyle ??
+                // 0 =
+                // 1 =
+                // 2 =
+                // 3 =
+            } break;
+
+            case BLUDGEON: // No defence boost
+            {
+                // attackStyle
+                // 0 = aggressive
+                // 1 = aggressive
+                // 3 = aggressive
+            } break;
+
+            case BULWARK:
+            {
+                // attackStyle
+                // 0 = accurate
+                // 3 = block (no defence boost)
+            } break;
+
+            case POWERED_WAND:
+            {
+                // attackStyle
+                // 0 = accurate
+                // 1 = accurate
+                // 3 = longrange
+            } break;
+
+            case PARTISAN:
+            {
+                // attackStyle
+                // 0 = accurate
+                // 1 = aggressive
+                // 2 = aggressive
+                // 3 = defensive
+            } break;
+        }
+
+
+        // Relevant attack styles:
+        // Melee: controller (+1 defence)
+        // Melee: defensive  (+3 defence)
+        // Range: longrange  (+3 defence)
+        // Powered staff: accurate (+3 magic)
+        // Powered staff: longrange (+1 magic)
+        // Autocasting doesn't give any bonuses, so regular staves can only benefit from the melee bonuses
+
+        return 0;
+    }

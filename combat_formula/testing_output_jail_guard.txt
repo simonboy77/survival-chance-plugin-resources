@@ -1,0 +1,213 @@
+https://oldschool.runescape.wiki/w/Goblin
+uses crush
+
+defence lvl 94
+defensive attack style
+crush defence +155
+
+jail guard lvl 26 https://oldschool.runescape.wiki/w/Jail_guard
+attack speed 5
+
+
+analysis:
+don't forgot that 1/4 of its hits are actually zero!! hit range 0-3
+ring of life got triggered.
+the ticks got messed up between hit 16 and 17, it should have stayed a multiple of 5, but it changed. After that it
+seems to have stayed stable, but I have no clue what happened. This data might not be trustworthy!
+
+hit 180 on tick 27704 was the last hit
+27704 / 5 = 5540.8 total hits
+180 / 5540.8 = 0,032486284 (damaging hit-chance or dmc)
+hit-chance = dmc + (dmc / maxhit) = 0,043315045 (~4.33%)
+
+now compensating for the misses before the first hit and after the last hit
+27704 / (180 - 1) = ~154.8
+27704 + 154.8 = 27858.8
+27858.8 / 5 = ~5571.8
+180 / 5571.8 = 0,032305804 (damaging hit-chance or dmc)
+hit-chance = dmc + (dmc / 3) = 0,043074406 (~4.31%)
+
+
+
+
+output:
+hit 1 on tick 0
+hit 2 on tick 75
+hit 3 on tick 130
+hit 4 on tick 230
+hit 5 on tick 895
+hit 6 on tick 1425
+hit 7 on tick 1630
+hit 8 on tick 1665
+hit 9 on tick 1790
+hit 10 on tick 2455
+hit 11 on tick 2595
+hit 12 on tick 2660
+hit 13 on tick 2920
+hit 14 on tick 2990
+hit 15 on tick 3040
+hit 16 on tick 3205
+hit 17 on tick 3384
+hit 18 on tick 3454
+hit 19 on tick 3599
+hit 20 on tick 3854
+hit 21 on tick 3889
+hit 22 on tick 4309
+hit 23 on tick 4374
+hit 24 on tick 4379
+hit 25 on tick 4454
+hit 26 on tick 4479
+hit 27 on tick 4499
+hit 28 on tick 4579
+hit 29 on tick 4619
+hit 30 on tick 4764
+hit 31 on tick 4944
+hit 32 on tick 5109
+hit 33 on tick 5129
+hit 34 on tick 5294
+hit 35 on tick 5339
+hit 36 on tick 5609
+hit 37 on tick 5789
+hit 38 on tick 5814
+hit 39 on tick 6149
+hit 40 on tick 6279
+hit 41 on tick 6409
+hit 42 on tick 6454
+hit 43 on tick 6584
+hit 44 on tick 6729
+hit 45 on tick 7289
+hit 46 on tick 7524
+hit 47 on tick 7594
+hit 48 on tick 7904
+hit 49 on tick 8379
+hit 50 on tick 8869
+hit 51 on tick 9139
+hit 52 on tick 9169
+hit 53 on tick 9184
+hit 54 on tick 9254
+hit 55 on tick 9279
+hit 56 on tick 9559
+hit 57 on tick 9584
+hit 58 on tick 9684
+hit 59 on tick 9944
+hit 60 on tick 10054
+hit 61 on tick 10224
+hit 62 on tick 10634
+hit 63 on tick 10639
+hit 64 on tick 10649
+hit 65 on tick 10819
+hit 66 on tick 11044
+hit 67 on tick 11154
+hit 68 on tick 11404
+hit 69 on tick 11459
+hit 70 on tick 11834
+hit 71 on tick 11959
+hit 72 on tick 11969
+hit 73 on tick 11984
+hit 74 on tick 12139
+hit 75 on tick 12179
+hit 76 on tick 12214
+hit 77 on tick 12244
+hit 78 on tick 12389
+hit 79 on tick 12394
+hit 80 on tick 12909
+hit 81 on tick 12989
+hit 82 on tick 13409
+hit 83 on tick 13499
+hit 84 on tick 13759
+hit 85 on tick 14274
+hit 86 on tick 14309
+hit 87 on tick 14679
+hit 88 on tick 14804
+hit 89 on tick 15299
+hit 90 on tick 15434
+hit 91 on tick 15464
+hit 92 on tick 15559
+hit 93 on tick 15704
+hit 94 on tick 15724
+hit 95 on tick 15829
+hit 96 on tick 15849
+hit 97 on tick 16084
+hit 98 on tick 16174
+hit 99 on tick 16184
+hit 100 on tick 16189
+hit 101 on tick 16369
+hit 102 on tick 16474
+hit 103 on tick 16514
+hit 104 on tick 16524
+hit 105 on tick 16644
+hit 106 on tick 16699
+hit 107 on tick 16734
+hit 108 on tick 16739
+hit 109 on tick 17159
+hit 110 on tick 17264
+hit 111 on tick 17319
+hit 112 on tick 17779
+hit 113 on tick 17819
+hit 114 on tick 18084
+hit 115 on tick 18189
+hit 116 on tick 18204
+hit 117 on tick 18589
+hit 118 on tick 18679
+hit 119 on tick 18719
+hit 120 on tick 19029
+hit 121 on tick 19069
+hit 122 on tick 19214
+hit 123 on tick 19309
+hit 124 on tick 19449
+hit 125 on tick 19524
+hit 126 on tick 19564
+hit 127 on tick 19669
+hit 128 on tick 19714
+hit 129 on tick 19759
+hit 130 on tick 19769
+hit 131 on tick 20104
+hit 132 on tick 20319
+hit 133 on tick 20349
+hit 134 on tick 20504
+hit 135 on tick 20769
+hit 136 on tick 20939
+hit 137 on tick 20989
+hit 138 on tick 21194
+hit 139 on tick 21439
+hit 140 on tick 21459
+hit 141 on tick 21904
+hit 142 on tick 21979
+hit 143 on tick 22074
+hit 144 on tick 22279
+hit 145 on tick 22329
+hit 146 on tick 22394
+hit 147 on tick 22509
+hit 148 on tick 22749
+hit 149 on tick 22804
+hit 150 on tick 22889
+hit 151 on tick 23029
+hit 152 on tick 23124
+hit 153 on tick 23509
+hit 154 on tick 23744
+hit 155 on tick 23784
+hit 156 on tick 23814
+hit 157 on tick 24309
+hit 158 on tick 24474
+hit 159 on tick 24494
+hit 160 on tick 24614
+hit 161 on tick 24754
+hit 162 on tick 24894
+hit 163 on tick 25139
+hit 164 on tick 25144
+hit 165 on tick 25394
+hit 166 on tick 25534
+hit 167 on tick 25759
+hit 168 on tick 26119
+hit 169 on tick 26309
+hit 170 on tick 26409
+hit 171 on tick 26439
+hit 172 on tick 26514
+hit 173 on tick 26549
+hit 174 on tick 26834
+hit 175 on tick 26909
+hit 176 on tick 27234
+hit 177 on tick 27354
+hit 178 on tick 27359
+hit 179 on tick 27699
+hit 180 on tick 27704

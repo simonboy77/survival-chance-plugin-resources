@@ -1,0 +1,2 @@
+full dimensions: 64x64
+space the image in the middle with an 8px border so 48x48

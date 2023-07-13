@@ -1,0 +1,1721 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en"><head>
+<!-- base href="https://www.rune-server.ee/" --><!--[if IE]></base><![endif]-->
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta id="e_vb_meta_bburl" name="vb_meta_bburl" content="https://www.rune-server.ee">
+<meta name="generator" content="vBulletin 4.2.5">
+<script src="Archive%20Combat%20Formulas_files/cNeDABgtqUbI-303Dn2SK0ZAxfk.js"></script><link rel="Shortcut Icon" href="https://www.rune-server.ee/favicon.ico" type="image/x-icon">
+<script type="text/javascript" src="Archive%20Combat%20Formulas_files/yuiloader-dom-event.js"></script>
+<script type="text/javascript">
+<!--
+	if (typeof YAHOO === 'undefined') // Load ALL YUI Local
+	{
+		document.write('<script type="text/javascript" src="clientscript/yui/yuiloader-dom-event/yuiloader-dom-event.js?v=425"><\/script>');
+		document.write('<script type="text/javascript" src="clientscript/yui/connection/connection-min.js?v=425"><\/script>');
+		var yuipath = 'clientscript/yui';
+		var yuicombopath = '';
+		var remoteyui = false;
+	}
+	else	// Load Rest of YUI remotely (where possible)
+	{
+		var yuipath = 'https://ajax.googleapis.com/ajax/libs/yui/2.9.0/build';
+		var yuicombopath = '';
+		var remoteyui = true;
+		if (!yuicombopath)
+		{
+			document.write('<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/connection/connection-min.js?v=425"><\/script>');
+		}
+	}
+	var SESSIONURL = "";
+	var SECURITYTOKEN = "guest";
+	var IMGDIR_MISC = "images/bluefox2/misc";
+	var IMGDIR_BUTTON = "images/bluefox2/buttons";
+	var vb_disable_ajax = parseInt("0", 10);
+	var SIMPLEVERSION = "425";
+	var BBURL = "https://www.rune-server.ee";
+	var LOGGEDIN = 0 > 0 ? true : false;
+	var THIS_SCRIPT = "showthread";
+	var RELPATH = "showthread.php?t=688072";
+	var PATHS = {
+		forum : "",
+		cms   : "",
+		blog  : ""
+	};
+	var AJAXBASEURL = "https://www.rune-server.ee/";
+// -->
+</script><script type="text/javascript" src="Archive%20Combat%20Formulas_files/connection-min.js"></script>
+<script type="text/javascript" src="Archive%20Combat%20Formulas_files/vbulletin-core.js"></script>
+<link rel="alternate" type="application/rss+xml" title="Rune-Server RSS Feed" href="https://www.rune-server.ee/external.php?type=RSS2">
+<link rel="alternate" type="application/rss+xml" title="Rune-Server - Informative Threads - RSS Feed" href="https://www.rune-server.ee/external.php?type=RSS2&amp;forumids=656">
+<link rel="stylesheet" type="text/css" href="Archive%20Combat%20Formulas_files/main-rollup.css">
+<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="https://www.rune-server.ee/clientscript/vbulletin_css/style00011l/popupmenu-ie.css?d=1672592807" />
+	<link rel="stylesheet" type="text/css" href="https://www.rune-server.ee/clientscript/vbulletin_css/style00011l/vbulletin-ie.css?d=1672592807" />
+	<link rel="stylesheet" type="text/css" href="https://www.rune-server.ee/clientscript/vbulletin_css/style00011l/vbulletin-chrome-ie.css?d=1672592807" />
+	<link rel="stylesheet" type="text/css" href="https://www.rune-server.ee/clientscript/vbulletin_css/style00011l/vbulletin-formcontrols-ie.css?d=1672592807" />
+	<link rel="stylesheet" type="text/css" href="https://www.rune-server.ee/clientscript/vbulletin_css/style00011l/editor-ie.css?d=1672592807" />
+	<![endif]-->
+<script type="application/ld+json">
+{
+	"@context": "http://schema.org",
+	"@type": "WebSite",
+	"url": "https://www.rune-server.ee",
+	"potentialAction": {
+		"@type": "SearchAction",
+		"target": "https://www.rune-server.ee/search.php?do=process&query={search_term_string}",
+		"query-input": "required name=search_term_string"
+	}
+}
+</script><script type="text/javascript" src="Archive%20Combat%20Formulas_files/post_thanks.js"></script>
+<meta name="description" content="Not mine Welcome, this comprehensive thread discusses the mechanics of the Old School Runescape combat system. The posts below contain an elaborate ex">
+<title> Archive: Combat Formulas</title>
+<link rel="canonical" href="https://www.rune-server.ee/runescape-development/rs2-server/informative-threads/688072-archive-combat-formulas.html">
+<link rel="stylesheet" type="text/css" href="Archive%20Combat%20Formulas_files/showthread-rollup.css">
+<link rel="stylesheet" type="text/css" href="Archive%20Combat%20Formulas_files/additional.css">
+<link rel="stylesheet" type="text/css" href="Archive%20Combat%20Formulas_files/css.css">
+</head>
+<body>
+<div class="above_body"> 
+<div id="header" class="floatcontainer doc_header" style="height: 110px;">
+<div><a name="top" href="https://www.rune-server.ee/" class="logo-image"><img src="Archive%20Combat%20Formulas_files/logo.webp" alt="Rune-Server - The King Community of RuneScape Private Servers" title="Rune-Server - The King Community of RuneScape Private Servers" height="90"></a></div>
+<div id="toplinks" class="toplinks">
+<ul class="nouser">
+<li><a href="https://www.rune-server.ee/register.php" rel="nofollow">Register</a></li>
+<li><a rel="help" href="https://www.rune-server.ee/faq.php">Help</a></li>
+<li>
+<script type="text/javascript" src="Archive%20Combat%20Formulas_files/vbulletin_md5.js"></script>
+<form id="navbar_loginform" action="https://www.rune-server.ee/login.php?do=login" method="post" onsubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+<fieldset id="logindetails" class="logindetails">
+<div>
+<div>
+<input type="text" class="textbox default-value" name="vb_login_username" id="navbar_username" size="10" accesskey="u" tabindex="101" value="User Name" style="color: rgb(130, 130, 130);">
+<input type="text" class="textbox default-value" tabindex="102" name="vb_login_password_hint" id="navbar_password_hint" size="10" value="Password" style="display: inline;">
+<input type="password" class="textbox" tabindex="102" name="vb_login_password" id="navbar_password" size="10" style="display: none;">
+<input type="checkbox" name="cookieuser" title="Remember Me?" value="1" id="cb_cookieuser_navbar" class="cb_cookieuser_navbar" accesskey="c" tabindex="103">
+<input type="submit" class="loginbutton" tabindex="104" value="Log in" title="Enter your username and password in the boxes provided to login, or click the 'register' button to create a profile for yourself." accesskey="s">
+</div>
+</div>
+</fieldset>
+<input type="hidden" name="s" value="">
+<input type="hidden" name="securitytoken" value="guest">
+<input type="hidden" name="do" value="login">
+<input type="hidden" name="vb_login_md5password">
+<input type="hidden" name="vb_login_md5password_utf">
+</form>
+<script type="text/javascript">
+			YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+			YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+			YAHOO.util.Dom.setStyle('navbar_username', "color", "#828282");
+			vB_XHTML_Ready.subscribe(function()
+			{
+			//
+				YAHOO.util.Event.on('navbar_username', "focus", navbar_username_focus);
+				YAHOO.util.Event.on('navbar_username', "blur", navbar_username_blur);
+				YAHOO.util.Event.on('navbar_password_hint', "focus", navbar_password_hint);
+				YAHOO.util.Event.on('navbar_password', "blur", navbar_password);
+			});
+			
+			function navbar_username_focus(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == 'User Name')
+				{
+				//
+					textbox.value='';
+					textbox.style.color='#FFFFFF';
+				}
+			}
+
+			function navbar_username_blur(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == '')
+				{
+				//
+					textbox.value='User Name';
+					textbox.style.color='#777777';
+				}
+			}
+			
+			function navbar_password_hint(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "none");
+				YAHOO.util.Dom.setStyle('navbar_password', "display", "inline");
+				YAHOO.util.Dom.get('navbar_password').focus();
+			}
+
+			function navbar_password(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				if (textbox.value == '')
+				{
+					YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+					YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+				}
+			}
+			</script>
+</li>
+</ul>
+</div>
+<div style="position: absolute; right: 20px; bottom: 15px; width: 555px;"><a rel="nofollow" target="_blank" href="http://www.battle-scape.com/?refer=rune-server"><img alt="Battle-Scape.com" src="Archive%20Combat%20Formulas_files/224645.gif" title="Battle-Scape.com" width="500" height="70"></a></div>
+<hr>
+</div>
+<div id="navbar" class="navbar">
+<ul id="navtabs" class="navtabs floatcontainer">
+<li><a href="https://www.rune-server.ee/index.php" class="navtab">Portal</a></li>
+<li id="vbtab_whatsnew">
+<a class="navtab" href="https://www.rune-server.ee/activity.php">What's New?</a>
+</li>
+<li class="selected" id="vbtab_forum">
+<a class="navtab" href="https://www.rune-server.ee/forum.php">Forum</a>
+<ul class="floatcontainer">
+<li id="vbflink_faq"><a href="https://www.rune-server.ee/faq.php">FAQ</a></li>
+<li id="vbflink_calendar"><a href="https://www.rune-server.ee/calendar.php">Calendar</a></li>
+<li class="popupmenu" id="vbmenu_community">
+<a href="javascript://" class="popupctrl" id="yui-gen1">Community</a>
+<ul class="popupbody" id="yui-gen0">
+<li id="vbclink_groups"><a href="https://www.rune-server.ee/group.php">Groups</a></li>
+<li id="vbclink_albums"><a href="https://www.rune-server.ee/members/albums/">Albums</a></li>
+<li id="vbclink_members"><a href="https://www.rune-server.ee/members/list/">Member List</a></li>
+<li id="link_ode0_444"><a rel="nofollow" href="https://www.rune-server.ee/usertag.php?do=statistics">User Tagging Statistics</a></li>
+</ul>
+</li>
+<li class="popupmenu" id="vbmenu_actions">
+<a href="javascript://" class="popupctrl" id="yui-gen3">Forum Actions</a>
+<ul class="popupbody" id="yui-gen2">
+<li id="vbalink_mfr"><a rel="nofollow" href="https://www.rune-server.ee/forumdisplay.php?do=markread&amp;markreadhash=guest">Mark Forums Read</a></li>
+</ul>
+</li>
+<li class="popupmenu" id="vbmenu_qlinks">
+<a href="javascript://" class="popupctrl" id="yui-gen5">Quick Links</a>
+<ul class="popupbody" id="yui-gen4">
+<li id="vbqlink_leaders"><a href="https://www.rune-server.ee/showgroups.php">View Site Leaders</a></li>
+<li id="link_odez_777"><a rel="nofollow" href="https://www.rune-server.ee/usertag.php?do=statistics">User Tagging Statistics</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li id="tab_mja0_383">
+<a class="navtab" href="https://www.rune-server.ee/toplist/">TopList</a>
+</li>
+<li id="tab_nti5_503">
+<a rel="nofollow" class="navtab" href="https://www.rune-server.ee/profile.php?do=editconnections">Discord</a>
+</li>
+<li><a rel="nofollow" href="https://www.rune-server.ee/index.php?pageid=rules" class="navtab">Rules</a></li>
+</ul>
+<div id="globalsearch" class="globalsearch">
+<form action="https://www.rune-server.ee/search.php?do=process" method="post" id="navbar_search" class="navbar_search">
+<input type="hidden" name="securitytoken" value="guest">
+<input type="hidden" name="do" value="process">
+<span class="textboxcontainer"><span><input type="text" name="query" class="textbox" tabindex="99"></span></span>
+<span class="buttoncontainer"><span><input type="image" class="searchbutton" src="Archive%20Combat%20Formulas_files/search.png" name="submit" onclick="document.getElementById('navbar_search').submit;" tabindex="100"></span></span>
+</form>
+<ul class="navbar_advanced_search">
+<li><a href="https://www.rune-server.ee/search.php" accesskey="4">Advanced Search</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="body_wrapper">
+<div class="outer_border">
+<div class="inner_border">
+<div id="breadcrumb" class="breadcrumb">
+<ul class="floatcontainer">
+<li class="navbithome"><a href="https://www.rune-server.ee/index.php" accesskey="1"><img src="Archive%20Combat%20Formulas_files/navbit-home.webp" alt="Home" title="Home"></a></li>
+<li class="navbit" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+<a href="https://www.rune-server.ee/forum.php" itemprop="item">
+<span itemprop="name">Forum</span>
+</a>
+</li>
+<li class="navbit" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+<a href="https://www.rune-server.ee/runescape-development/" itemprop="item">
+<span itemprop="name">RuneScape Development</span>
+</a>
+<meta itemprop="position" content="{$position}">
+</li>
+<li class="navbit" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+<a href="https://www.rune-server.ee/runescape-development/rs2-server/" itemprop="item">
+<span itemprop="name">RS2 Server</span>
+</a>
+<meta itemprop="position" content="{$position}">
+</li>
+<li class="navbit" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+<a href="https://www.rune-server.ee/runescape-development/rs2-server/informative-threads/" itemprop="item">
+<span itemprop="name">Informative Threads</span>
+</a>
+<meta itemprop="position" content="{$position}">
+</li>
+<li class="navbit lastnavbit" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+<span itemprop="name"> Archive: Combat Formulas</span>
+<meta itemprop="position" content="4">
+</li>
+</ul>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+<form action="https://www.rune-server.ee/profile.php?do=dismissnotice" method="post" id="notices" class="notices">
+<input type="hidden" name="do" value="dismissnotice">
+<input type="hidden" name="s" value="">
+<input type="hidden" name="securitytoken" value="guest">
+<input type="hidden" id="dismiss_notice_hidden" name="dismiss_noticeid" value="">
+<input type="hidden" name="url" value="">
+<div class="outer_border">
+<div class="inner_border">
+<ol>
+<li class="restore" id="navbar_notice_1041">
+If this is your first visit, be sure to
+check out the <a href="https://www.rune-server.ee/faq.php" target="_blank"><b>FAQ</b></a> by clicking the
+link above. You may have to <a href="https://www.rune-server.ee/register.php" target="_blank"><b>register</b></a>
+before you can post: click the register link above to proceed. To start viewing messages,
+select the forum that you want to visit from the selection below.
+</li>
+</ol>
+</div></div>
+</form>
+<div id="pagetitle" class="pagetitle">
+<h1>
+Thread: <span class="threadtitle"><a href="https://www.rune-server.ee/runescape-development/rs2-server/informative-threads/688072-archive-combat-formulas.html" title="Reload this Page">Archive: Combat Formulas</a></span>
+</h1>
+</div>
+<div id="above_postlist" class="above_postlist">
+<div id="pagination_top" class="pagination_top">
+<div id="postpagestats_above" class="postpagestats">
+Results 1 to 3 of 3
+</div>
+</div>
+</div>
+<table class="vbs_forumhead table">
+<tbody><tr class="vbs_forumhead">
+<td>
+<ul id="postlist_popups" class="postlist_popups popupgroup">
+<li class="popupmenu" id="threadtools">
+<h6><a class="popupctrl" href="javascript://" id="yui-gen7">Thread Tools</a></h6>
+<ul class="popupbody" id="yui-gen6">
+<li class="vbmenu_head">&nbsp;Thread Tools</li>
+<li><a href="https://www.rune-server.ee/printthread.php?t=688072&amp;pp=10&amp;page=1" accesskey="3" rel="nofollow">Show Printable Version</a></li>
+<li><a href="https://www.rune-server.ee/sendmessage.php?do=sendtofriend&amp;t=688072" rel="nofollow">Email this Page…</a></li>
+<li>
+<a href="https://www.rune-server.ee/subscription.php?do=addsubscription&amp;t=688072" rel="nofollow">Subscribe to this Thread…</a>
+</li>
+</ul>
+</li>
+</ul>
+</td>
+</tr>
+</tbody></table>
+<div id="postlist" class="postlist restrain">
+<ol id="posts" class="posts" start="1">
+<li class="postbitlegacy postbitim postcontainer" id="post_5651892">
+
+<div class="outer_border">
+<div class="posthead">
+<span class="nodecontrols">
+<a name="post5651892" href="https://www.rune-server.ee/runescape-development/rs2-server/informative-threads/688072-archive-combat-formulas-post5651892.html#post5651892" class="postcounter">#1</a><a id="postcount5651892" name="1"></a>
+</span>
+<span class="posttitle icon">
+Archive: Combat Formulas&nbsp;
+</span>
+</div>
+</div>
+<div class="outer_border remove_border_top">
+<div class="postdetails">
+<div class="userinfo userinfo_mod">
+<div class="username_container">
+<div class="popupmenu memberaction" id="yui-gen8">
+<a class="username online popupctrl" href="https://www.rune-server.ee/members/95295-spooky/" title="Spooky is online now" id="yui-gen10"><strong><img alt="Forum Moderator" src="Archive%20Combat%20Formulas_files/mod.webp" title="Forum Moderator" border="0"><span style="color: #FF9933; font-weight: bold;">Spooky</span></strong></a>
+<ul class="popupbody memberaction_body" id="yui-gen9">
+<li class="left">
+<a href="https://www.rune-server.ee/members/95295-spooky/" class="siteicon_profile">
+View Profile
+</a>
+</li>
+<li class="right">
+<a href="https://www.rune-server.ee/search.php?do=finduser&amp;userid=95295&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+View Forum Posts
+</a>
+</li>
+<li class="left">
+<a href="https://www.rune-server.ee/private.php?do=newpm&amp;u=95295" class="siteicon_message" rel="nofollow">
+Private Message
+</a>
+</li>
+</ul>
+</div>
+<img class="inlineimg onlinestatus" src="Archive%20Combat%20Formulas_files/user-online.png" alt="Spooky is online now" title="Spooky is online now" border="0">
+</div>
+<span class="usertitle">
+Forum Moderator
+</span>
+<span class="rank"><img src="Archive%20Combat%20Formulas_files/phatw.png" alt="" border=""><img src="Archive%20Combat%20Formulas_files/phatw.png" alt="" border=""><img src="Archive%20Combat%20Formulas_files/phatw.png" alt="" border=""><br><img src="Archive%20Combat%20Formulas_files/fmodphat.png" alt="" border=""><img src="Archive%20Combat%20Formulas_files/fmodphat.png" alt="" border=""><img src="Archive%20Combat%20Formulas_files/fmodphat.png" alt="" border=""><br><img src="Archive%20Combat%20Formulas_files/katagon.webp" alt="" border=""></span>
+<span class="postbit_reputation" id="repdisplay_5651892_95295" title="Spooky ">
+<img class="repimg" src="Archive%20Combat%20Formulas_files/reputation_off.webp" alt="">
+</span>
+<hr>
+<dl class="userinfo_extra">
+<dt>Join Date</dt> <dd>Jan 2009</dd>
+<dt>Posts</dt> <dd>5,737</dd>
+<div class="post_field"><dt>Thanks given</dt> <dd>1,143</dd></div>
+<div class="post_field"><dt>Thanks received</dt><dd>3,579</dd></div>
+</dl>
+<dl class="user_rep">
+<dt>Rep Power</dt>
+<dd id="reppower_5651892_95295">5000</dd>
+</dl>
+<div class="imlinks">
+<a rel="nofollow" href="https://discordapp.com/users/254048072986918912" target="_blank"><img alt="Archive: Combat Formulas" src="Archive%20Combat%20Formulas_files/im_discord.webp" title="Archive: Combat Formulas"></a>
+</div>
+</div>
+<div class="postbody">
+<div class="postrow has_after_content">
+<span class="postdate icon">
+<img alt="Default" src="Archive%20Combat%20Formulas_files/icon1.webp" class="inlineimg" title="Default" border="0">
+</span>
+<span class="postdate old">
+<span class="date">09-04-2019, <span class="time">07:37 PM</span></span>
+</span>
+<span class="float_right">
+</span>
+<div class="hr"></div>
+<div style="float:right; width:300px; height:250px; margin-left:10px">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-5897627310846259";
+google_ad_host = "ca-host-pub-2606800903002383";
+google_ad_width = 300;
+google_ad_height = 250;
+google_ad_format = "300x250_as";
+google_ad_type = "text_image";
+google_ad_channel = "";
+google_color_border = "";
+google_color_bg = "";
+google_color_link = "";
+google_color_text = "";
+google_color_url = "";
+google_ui_features = "rc:6";
+//-->
+</script>
+<script type="text/javascript" src="Archive%20Combat%20Formulas_files/show_ads.js">
+</script>
+</div>
+<div class="content hasad">
+<div id="post_message_5651892">
+<blockquote class="postcontent restore ">
+Not mine<br>
+<br>
+<div class="bbcode_container">
+<div class="bbcode_quote">
+<div class="quote_container">
+<div class="bbcode_quote_container"></div>
+<span style="font-family: Verdana"><font size="3"><br>
+Welcome,<br>
+<br>
+this comprehensive thread discusses the mechanics of the Old School Runescape combat system.<br>
+<br>
+The posts below contain an elaborate explanation of how combat skills 
+work in Runescape and how the game uses skill stats with equipment and 
+various bonuses to calculate damage output. I recommend the use of a 
+spreadsheet or some sort of advanced calculator to complete the steps. 
+I've made a google spreadsheet myself, the link is publicly available 
+and can be found on my twitter (see signature below). <br>
+<br>
+<br>
+Credits:<br>
+<br>
+The maximum hit formula below is largely based on the original maximum 
+hit formula thread by Obliv from back in 2007. I've taken the liberty of
+ updating it for Old School Runescape.<br>
+<br>
+Also thanks to the following players for their contributions, corrections and suggestions to this thread:<br>
+<br>
+Woox<br>
+Downlifter<br>
+ChocolatOgre<br>
+Henke18<br>
+Meric<br>
+<br>
+<br>
+Feel free to leave a comment or question, as I'm always looking for feedback and improvements.<br>
+</font></span>
+</div>
+</div>
+</div><div class="bbcode_container">
+<div class="bbcode_quote">
+<div class="quote_container">
+<div class="bbcode_quote_container"></div>
+<span style="font-family: Verdana"><font size="3"><b><font color="#FF8C00">| 2. |</font> <font color="#FFFF00">Table of contents</font></b><br>
+<br>
+Post 01. <font color="#FF8C00">1.</font> Introduction<br>
+Post 02. <font color="#FF8C00">2.</font> Table of contents<br>
+Post 03. <font color="#FF8C00">3.</font> Max hit formula<br>
+Post 04.<br>
+Post 05.<br>
+Post 06. <font color="#FF8C00">4.</font> Magic max hit formula<br>
+Post 07. <font color="#FF8C00">5.</font> Accuracy formula<br>
+Post 08.<br>
+Post 09.<br>
+Post 10. <font color="#FF8C00">6.</font> Extra information<br>
+Post 11.<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+Key of colours:<br>
+Using <font color="#FFFF00">yellow</font> for chapters: <font color="#FFFF00">Melee and ranged maximum hit</font><br>
+Using <font color="#FF8C00">orange</font> for sections: <font color="#FF8C00">| 3.4 |</font> Special attacks<br>
+Using <font color="#00FFFF">blue</font> for subsections: <font color="#00FFFF">3.4B.</font><br>
+Using <font color="#00FF00">green</font> for steps: <font color="#00FF00">b.</font><br>
+<br>
+Other info:<br>
+~ indicates an approximation.<br>
+? indicates an unknown or uncertain bonus.<br>
+• indicates a choice in a list where you can only pick one option.<br>
+<br>
+Visible level means the level with any (potion) boost included.<br>
+<br>
+You can check the defence stats of a monster by using the monster examine spell on it.<br>
+For NPC rolls, always use the default stance bonus of +9.</font></span>
+</div>
+</div>
+</div><div class="bbcode_container">
+<div class="bbcode_quote">
+<div class="quote_container">
+<div class="bbcode_quote_container"></div>
+<span style="font-family: Verdana"><font size="3"><b><font color="#FF8C00">| 3. |</font> <font color="#FFFF00">Melee and ranged maximum hit</font></b><br>
+<br>
+<br>
+This formula calculates the maximum melee or ranged hit for a single hitsplat.<br>
+<br>
+<br>
+<b><font color="#FF8C00">| 3.1 | </font>Maximum base hit </b><br>
+<br>
+<font color="#00FF00">a.</font> Max hit = 0.5 + A * (B+64) /640<br>
+<font color="#00FF00">b.</font> Round down the max hit to the nearest integer. Go to section <font color="#FF8C00">3.4</font> for any special attacks.<br>
+<br>
+<br>
+To find variables A and B, please look below in section <font color="#FF8C00">3.2</font> and <font color="#FF8C00">3.3</font>.<br>
+<br>
+<br>
+<b><font color="#FF8C00">| 3.2 |</font> Effective level (A)</b><br>
+<br>
+<font color="#00FF00">a. </font>Take the visible strength or ranged level from the skills interface.<br>
+<font color="#00FF00">b.</font> Multiply the level by the prayer adjustment:<br>
+<br>
+<img src="Archive%20Combat%20Formulas_files/687474703a2f2f692e696d6775722e636f6d2f514762644271662e706e67.png" alt="" border="0"><br>
+<br>
+<br>
+<font color="#00FF00">c.</font> Round down to the nearest integer.<br>
+<font color="#00FF00">d.</font> Add the stance bonus from the combat options interface.<br>
+<br>
+Melee:<br>
+• Aggressive: +3<br>
+• Controlled: +1<br>
+<br>
+Ranged:<br>
+* Accurate: +3<br>
+<br>
+<font color="#00FF00">e.</font> Add up +8.<br>
+<font color="#00FF00">f. </font>Multiply by the void bonus:<br>
+• Void melee: multiply by 1.10. Round down.<br>
+• Void ranged: multiply by 1.10. Round down.<br>
+• Elite void ranged: multiply by 1.125. Round down.<br>
+<br>
+<font color="#00FF00">g.</font> This is the effective (ranged) strength level. Let this equal 'A' in the formula in <font color="#FF8C00">3.1</font>.<br>
+<br>
+<br>
+<b><font color="#FF8C00">| 3.3 |</font> Equipment bonus (B)</b><br>
+<br>
+Take the melee or ranged strength bonus from the equipment stats interface and let this equal 'B' in the formula in <font color="#FF8C00">3.1</font>.<br>
+</font></span>
+</div>
+</div>
+</div><div class="bbcode_container">
+<div class="bbcode_quote">
+<div class="quote_container">
+<div class="bbcode_quote_container"></div>
+<span style="font-family: Verdana"><font size="3"><br>
+<b><font color="#FF8C00">| 3.4 |</font> Special attacks</b><br>
+<br>
+<br>
+<b><font color="#00FFFF">| 3.4a |</font> Make sure you have rounded down your max hit from <font color="#FF8C00">3.1</font>.</b><br>
+<br>
+<font color="#00FF00">a.</font> Multiply by the bonus of one of the following items:<br>
+<br>
+Melee:<br>
+• Black mask: 7/6<br>
+• Salve amulet: 7/6<br>
+• Salve amulet (e): 1.20<br>
+<br>
+Ranged:<br>
+• Black mask (i): 1.15<br>
+• Salve amulet (i): 1.15<br>
+• Salve amulet (ei): 1.20<br>
+<br>
+(Note: the black mask bonus is ignored when using a salve amulet)<br>
+<br>
+<font color="#00FF00">b.</font> Round down to the nearest integer. <br>
+<font color="#00FF00">c.</font> Multiply by the bonus of one of the following items:<br>
+<br>
+Melee:<br>
+• Abyssal dagger: 0.85<br>
+• Abyssal bludgeon: between 1 and 1.495 (0.5% for every lost prayer point)<br>
+• Arclight: 1.70 (vs. demons)<br>
+* Armadyl godsword: 1.10<br>
+• Bandos godsword: 1.10<br>
+• Barrelchest anchor: 1.10<br>
+• Dragon claws: subtract 1 and see <font color="#FF8C00">6.4</font>.<br>
+• Dragon dagger: 1.15<br>
+• Dragon/crystal halberd: 1.10<br>
+• Dragon longsword: 1.25<br>
+• Dragon mace: 1.50<br>
+• Dragon sword: 1.25<br>
+• Dragon warhammer: 1.50<br>
+• Leaf-bladed battleaxe: 1.175 (vs. kurask, turoth)<br>
+• Obsidian armour: 1.10<br>
+• Rune claws: 1.15<br>
+• Saradomin godsword: 1.10<br>
+• Saradomin sword: 1.10<br>
+• Saradomin's blessed sword: 1.25<br>
+• Zamorak godsword: 1.10<br>
+<br>
+Ranged:<br>
+• Ballista: 1.25<br>
+• Dark bow (dragon arrows): 1.50<br>
+• Dark bow (other arrows): 1.30<br>
+• Diamond bolts: 1.15<br>
+• Dragon hunter crossbow: 1.10 (vs. dragons, wyverns, Great Olm)<br>
+• Magic longbow, shortbow, composite or seercull: on page 2, see: <font color="#FF8C00">6.3</font>.<br>
+• Onyx bolts: 1.20<br>
+• Rune thrownaxe: on page 2, see: <font color="#FF8C00">6.3</font>.<br>
+• Toxic blowpipe: 1.50<br>
+• Twisted bow: (250 + truncate[(3*magic-14) /100] - truncate[(0.3magic-140)² / 100]) /100<br>
+<br>
+<br>
+<font color="#00FF00">d.</font> Round down to the nearest integer.<br>
+<font color="#00FF00">e.</font> If a PvP protection prayer is used, it 
+reduces the max hit by 40% at this point. Multiply by 0.6 and round down
+ to the nearest integer. Go to <font color="#00FFFF">3.4b</font>.<br>
+</font></span>
+</div>
+</div>
+</div><div class="bbcode_container">
+<div class="bbcode_quote">
+<div class="quote_container">
+<div class="bbcode_quote_container"></div>
+<span style="font-family: Verdana"><font size="3"><br>
+<b><font color="#00FFFF">| 3.4b |</font> Make sure you have rounded down your max hit from <font color="#FF8C00">3.1</font> or <font color="#00FFFF">3.4a</font>.</b><br>
+<br>
+<font color="#00FF00">a.</font> Apply the bonus of one of the following items:<br>
+<br>
+Melee:<br>
+* Armadyl godsword: 1.25<br>
+• Bandos godsword: 1.10<br>
+• Berserker necklace: 1.20<br>
+• Darklight: 1.60 (vs. demons)<br>
+• Dharok's set: multiply by: 1+ lost hp/100 * max hp/100<br>
+• Gadderhammer: 1.25 or 2.00 (vs. shades), see: <font color="#FF8C00">6.2</font>.<br>
+* Keris: 4/3 or 3.00 (vs. kalphites and scarabs), see: <font color="#FF8C00">6.2</font>.<br>
+* Verac's set: add up +1.<br>
+<br>
+Ranged:<br>
+• Dragonstone bolts: multiply the visible ranged level by 1/5. Round 
+down and add this up to the max hit. (ex: add up +22 with 112 ranged)<br>
+• Opal bolts: multiply the visible ranged level by 1/10. Round down and add this up to the max hit.<br>
+• Pearl bolts: multiply the visible ranged level by 1/15 (or 1/20). Round down and add this up to the max hit.<br>
+<br>
+<font color="#00FF00">b.</font> Round down to the nearest integer.<br>
+<font color="#00FF00">c.</font> In Castle Wars, multiply by:<br>
+• Castlewar brace: 1.20 (vs. flagholder)<br>
+<br>
+<font color="#00FF00">d.</font> Round down to the nearest integer.<br>
+<font color="#00FF00">e.</font> If the special attack of the Staff of 
+the Dead is used, all melee damage will be reduced by 50% at this point.
+ Multiply by 0.5 and round down to the nearest integer. This is your 
+maximum hit.<br>
+</font></span>
+</div>
+</div>
+</div><div class="bbcode_container">
+<div class="bbcode_quote">
+<div class="quote_container">
+<div class="bbcode_quote_container"></div>
+<span style="font-family: Verdana"><font size="3"><br>
+<b><font color="#FF8C00">| 4. |</font> <font color="#FFFF00">Magic maximum hit</font></b><br>
+<br>
+<br>
+This formula calculates the maximum magic hit for a single hitsplat.<br>
+<br>
+<br>
+<font color="#00FF00">a.</font> Find the base maximum damage a spell can deal.<br>
+<br>
+Spells with fixed max hit:<br>
+<br>
+<img src="Archive%20Combat%20Formulas_files/687474703a2f2f692e696d6775722e636f6d2f586752394267442e706e67.png" alt="" border="0"><br>
+<br>
+The maximum hit of these spells depends on your visible magic level:<br>
+<br>
+<img src="Archive%20Combat%20Formulas_files/687474703a2f2f692e696d6775722e636f6d2f365162744f78672e706e67.png" alt="" border="0"><br>
+<br>
+<font color="#00FF00">b.</font> Increase the base damage:<br>
+• God spells (level 60) in combination with Charge (level 80): the base max hit is 30.<br>
+* Bolt spells in combination with Chaos gauntlets: add up +3.<br>
+<br>
+<font color="#00FF00">c.</font> The following bonuses stack by adding up.<br>
+Multiply by: (1+...)<br>
+• Ancestral equipment: +0.02 per piece<br>
+• God cape (imbued): +0.02<br>
+• Kodai wand: +0.15<br>
+• Occult necklace: +0.10<br>
+• Salve amulet (i): 0.15<br>
+• Salve amulet (ei): 0.20<br>
+• Smoke staff: +0.10 (normal spellbook only)<br>
+• Staff of the dead: +0.15<br>
+• Tormented bracelet: +0.05<br>
+• Elite void magic: +0.025<br>
+(ex: Occult + SotD + Torm. bracelet: multiply by 1.30.)<br>
+<br>
+<font color="#00FF00">d.</font> Round down to the nearest integer.<br>
+<font color="#00FF00">e.</font> On a slayer task, multiply by:<br>
+• Black mask (i): 1.15<br>
+<br>
+<font color="#00FF00">f.</font> Round down to the nearest integer.<br>
+<font color="#00FF00">g.</font> If a fire spell is used, multiply by:<br>
+• Tome of fire: 1.5<br>
+<br>
+<font color="#00FF00">h.</font> Round down to the nearest integer.<br>
+<font color="#00FF00">i.</font> In Castle Wars, multiply by:<br>
+• Castlewar brace: 1.20 (vs. flagholder)<br>
+<br>
+<font color="#00FF00">j.</font> Round down to the nearest integer. This is your maximum hit.<br>
+</font></span>
+</div>
+</div>
+</div><div class="bbcode_container">
+<div class="bbcode_quote">
+<div class="quote_container">
+<div class="bbcode_quote_container"></div>
+<span style="font-family: Verdana"><font size="3"><br>
+<b><font color="#FF8C00">| 5. | </font><font color="#FFFF00">Accuracy formula</font></b><br>
+<br>
+<br>
+<b><font color="#FF8C00">| 5.1 | </font>Attack and defence roll</b><br>
+<br>
+The maximum roll is calculated as follows:<br>
+<br>
+<font color="#00FF00">a.</font> Max roll = A * (B+64)<br>
+<font color="#00FF00">b.</font> If you're using special attacks: go to <font color="#FF8C00">5.4</font>. To calculate the chance to hit: go to <font color="#FF8C00">5.6</font><br>
+<br>
+To find the variables A and B, please look below in section <font color="#FF8C00">5.2</font> and <font color="#FF8C00">5.3</font>.<br>
+<br>
+<br>
+<b><font color="#FF8C00">| 5.2 |</font> Effective level (A)</b><br>
+<br>
+<font color="#00FF00">a.</font> Take the visible attack, ranged, magic or defence level from the skills interface.<br>
+<font color="#00FF00">b.</font> Multiply the level by the prayer adjustment:<br>
+<br>
+<br>
+<br>
+<br>
+<font color="#00FF00">c.</font> Round down to the nearest integer.<br>
+<font color="#00FF00">d.</font> Add the stance bonus from the combat options interface.<br>
+<br>
+Melee attack:<br>
+• Accurate: +3<br>
+• Controlled: +1<br>
+<br>
+Ranged attack:<br>
+• Accurate: +3<br>
+<br>
+Magic attack:<br>
+• Accurate +3 (trident only)<br>
+• Long range +1 (trident only)<br>
+<br>
+Defence:<br>
+• Defensive: +3<br>
+• Controlled: +1<br>
+• Long range: +3<br>
+<br>
+<font color="#00FF00">e.</font> Add up +8.<br>
+<font color="#00FF00">f. </font>Multiply by the void bonus:<br>
+• Void melee: multiply melee attack by 1.10.<br>
+• Void ranged: multiply ranged attack by 1.10.<br>
+• Void magic: multiply magic attack by 1.45.<br>
+<br>
+g. Round down to the nearest integer. This is the effective level. Let this equal 'A' in 5.1<br>
+<br>
+<br>
+<b><font color="#FF8C00">| 5.3 |</font> Equipment bonus (B)</b><br>
+<br>
+Take the corresponding stab, slash, crush, ranged or magic attack bonus 
+from the equipment stats interface and let this equal 'B' in <font color="#FF8C00">5.1</font><br>
+</font></span>
+</div>
+</div>
+</div><div class="bbcode_container">
+<div class="bbcode_quote">
+<div class="quote_container">
+<div class="bbcode_quote_container"></div>
+<span style="font-family: Verdana"><font size="3"><br>
+<b><font color="#FF8C00">| 5.4 |</font> Special attacks</b><br>
+<br>
+<font color="#00FF00">a.</font> Multiply by the bonus of one of the following items:<br>
+<br>
+Melee:<br>
+• Black mask: 7/6<br>
+• Salve amulet: 7/6<br>
+• Salve amulet (e): 1.20<br>
+<br>
+Ranged or magic:<br>
+• Black mask (i): 1.15<br>
+• Salve amulet (i): 1.15<br>
+• Salve amulet (ei): 1.20<br>
+<br>
+(Note: the black mask bonus is ignored when using a salve amulet)<br>
+<br>
+<font color="#00FF00">b.</font> Round down to the nearest integer.<br>
+<font color="#00FF00">c.</font> Multiply by the bonus of one of the following items:<br>
+<br>
+Melee:<br>
+• Arclight: 1.70 (vs. demons)<br>
+• Abyssal dagger: 1.25<br>
+• Abyssal whip: 1.25<br>
+• Barrelschest anchor: 2.00<br>
+• Dinh's Bulwark: 1.20<br>
+• Dragon dagger: 1.15<br>
+• Dragon mace: 1.25<br>
+• Dragon scimitar: 1.25<br>
+• Dragon sword: 1.25<br>
+• Godsword, any: 2.00<br>
+* Rune claws: 1.15<br>
+• Saradomin sword: 2.00<br>
+• Saradomin's blessed sword: 2.00<br>
+<br>
+Ranged:<br>
+• Armadyl crossbow: 2.00<br>
+• Ballista: 1.25<br>
+• Dragon hunter crossbow: 1.10 (vs. dragons, wyverns, Great Olm)<br>
+• Dragon thrownaxe: 1.25<br>
+• Twisted bow: (140 + truncate[(3*magic-10) /100] - truncate[(0.3magic-100)² / 100]) /100<br>
+<br>
+Magic attack:<br>
+• Smoke staff: 1.10 (normal spellbook only)<br>
+<br>
+Defence:<br>
+• Torag's set (with Amulet of the Damned): 1+ lost hp/100 * max hp/100<br>
+<br>
+<font color="#00FF00">d.</font> Round down to the nearest integer. This is the max roll after special attacks. Go to <font color="#FF8C00">5.6</font><br>
+</font></span>
+</div>
+</div>
+</div><div class="bbcode_container">
+<div class="bbcode_quote">
+<div class="quote_container">
+<div class="bbcode_quote_container"></div>
+<span style="font-family: Verdana"><font size="3"><br>
+<b><font color="#FF8C00">| 5.5 |</font> Magic defence roll</b><br>
+<br>
+(This only applies to players; NPC magic defence is 100% based on the magic level and bonus)<br>
+<br>
+<font color="#00FF00">a.</font> Calculate your effective defence level as described in <font color="#FF8C00">5.2</font>, steps a-g.<br>
+<font color="#00FF00">b.</font> Multiply your effective defence level by 0.30 and round down to the nearest integer.<br>
+<font color="#00FF00">c.</font> Take your visible magic level from the skills interface.<br>
+<font color="#00FF00">d.</font> Multiply the magic level by the prayer adjustment.<br>
+<br>
+Magic defence:<br>
+• Mystic will: 1.05<br>
+• Mystic lore: 1.10<br>
+• Mystic might: 1.15<br>
+• Augury: 1.25<br>
+<br>
+<font color="#00FF00">e.</font> Round down to the nearest integer.<br>
+<font color="#00FF00">f.</font> Multiply this by 0.70 and round down to the nearest integer.<br>
+<font color="#00FF00">g.</font> Add up the defence value from step b and let this equal 'A' in the formula in <font color="#FF8C00">5.1</font>.<br>
+<font color="#00FF00">h.</font> Take your magic defence bonus from the equipment stats interface and let this equal 'B' in <font color="#FF8C00">5.1</font><br>
+<br>
+<br>
+<font color="#FF8C00">| 5.6 |</font> Hit chance<br>
+<br>
+With the max attack roll and the max defence roll, you can calculate the chance to hit with the next formula:<br>
+<br>
+• If the max attack roll is higher:<br>
+Accuracy = 1 - (def+2) / (2*(atk+1))<br>
+<br>
+• Or else:<br>
+Accuracy = atk / (2*(def+1))<br>
+<br>
+Note: 'atk ' and 'def ' refer to the max roll value as calculated in <font color="#FF8C00">5.1</font>, <font color="#FF8C00">5.4</font> or <font color="#FF8C00">5.5</font>).<br>
+</font></span>
+</div>
+</div>
+</div><div class="bbcode_container">
+<div class="bbcode_quote">
+<div class="quote_container">
+<div class="bbcode_quote_container"></div>
+<span style="font-family: Verdana"><font size="3"><br>
+<b><font color="#FF8C00">| 6. |</font> <font color="#FFFF00">Extra info</font></b><br>
+<br>
+<br>
+<b><font color="#FF8C00">| 6.1 |</font> Combat experience</b><br>
+<br>
+Some monsters in Runescape give increased experience (more than 4 
+exp/damage) in the combat related skills. The normal amount of 
+experience is multiplied by a percentage and the percentage is based on 
+the stats of the NPC, as described below. If a monster has a multiplier,
+ you'll be able to receive bonus exp in the following skills: attack, 
+strength, defence, ranged, magic, hitpoints and slayer.<br>
+<br>
+Multiplier = 1 + floor(average level * (average def bonus + str bonus + atk bonus) /5120) /40<br>
+<br>
+Where:<br>
+average level = floor((Attack + Strength + Defence + Hitpoints) /4)<br>
+average def bonus = floor((stab def + slash def + crush def) /3)<br>
+<br>
+<br>
+<b><font color="#FF8C00">| 6.2 |</font> Probabilities of special effects</b><br>
+<br>
+• Bone dagger special: guaranteed hit if you weren't the last to attack the target.<br>
+• Diamond bolt (e): guaranteed hit if the special triggers, see below.<br>
+• Dorgeshuun crossbow special: guaranteed hit if you weren't the last to attack the target.<br>
+• Gadderhammer: 1/20 chance to deal double damage, 19/20 chance to hit 25% higher.<br>
+• Keris: 1/51 chance to deal triple damage, 50/51 chance to hit 33.3% higher.<br>
+• Magic longbow, comp bow, seercull special: guaranteed hit.<br>
+• Poisoning your target: 1/4 for melee, 1/8 for ranged. Damage must be 1 or higher.<br>
+• Ruby bolt (e): fixed damage (20% of HP) if the special triggers, see below.<br>
+• Verac's set: 1/4 chance on a guaranteed hit with +1 additional damage.<br>
+• Bolt activation probability (image by Mod Ash):<br>
+<br>
+<img src="Archive%20Combat%20Formulas_files/687474703a2f2f692e696d6775722e636f6d2f6c397a4a6a51622e706e67.png" alt="" border="0"><br>
+</font></span>
+</div>
+</div>
+</div>
+</blockquote>
+</div>
+</div>
+</div>
+<div class="after_content">
+
+<blockquote class="postcontent lastedited">
+
+Last edited by Spooky; 09-04-2019 at <span class="time">08:21 PM</span>.
+</blockquote>
+
+<div style="clear:both"></div>
+</div>
+<div class="cleardiv"></div>
+</div>
+</div>
+<div class="postfoot">
+
+<div class="textcontrols floatcontainer">
+<span class="postcontrols">
+<img style="display:none" id="progress_5651892" src="Archive%20Combat%20Formulas_files/progress.gif" alt="">
+<a id="qrwq_5651892" class="newreply" href="https://www.rune-server.ee/newreply.php?do=newreply&amp;p=5651892" rel="nofollow"><img id="quoteimg_5651892" src="Archive%20Combat%20Formulas_files/quote.gif" alt="Reply With Quote" &nbsp;="" title="Reply With Quote"></a>
+<span class="seperator">&nbsp;</span>
+</span>
+<span class="postlinking">
+</span>
+
+</div>
+</div>
+</div>
+<div class="vbcat_bottom"><div class="vbcat_bottom_left"><div class="vbcat_bottom_right">&nbsp;</div></div></div>
+<hr>
+</li>
+<li class="postbitlegacy postbitim" id="post_thanks_box_5651892">
+<div class="postbody" style="margin-left: 0">
+<div class="postrow">
+<h2 class="title">
+Thankful users:
+</h2>
+<div class="content">
+<div id="post_thanks_bit_5651892">
+<blockquote class="postcontent restore">
+<a href="https://www.rune-server.ee/members/94407-3lou-55/" rel="nofollow"><img alt="Normal Donator" src="Archive%20Combat%20Formulas_files/don.webp" title="Normal Donator" border="0"><span style="color:red; text-shadow: 0pt 0pt 0.5em rgb(255, 0, 0);">3lou 55</span></a>,<a href="https://www.rune-server.ee/members/135735-all3n/" rel="nofollow">All3n</a>,<a href="https://www.rune-server.ee/members/337662-anamedsoul/" rel="nofollow">aNamedSoul</a>,<a href="https://www.rune-server.ee/members/248145-clem585/" rel="nofollow"><img alt="Contributor" src="Archive%20Combat%20Formulas_files/contributor.webp" title="Contributor" border="0"><span style="color:#89CFF0;">clem585</span></a>,<a href="https://www.rune-server.ee/members/189177-corey/" rel="nofollow"><img alt="Respected Member" src="Archive%20Combat%20Formulas_files/vet.webp" title="Respected Member" border="0"><span style="color: #008080;">Corey</span></a>,<a href="https://www.rune-server.ee/members/271287-d/" rel="nofollow"><img alt="Extreme Donator" src="Archive%20Combat%20Formulas_files/xdon.webp" title="Extreme Donator" border="0"><span style="color:#02B41D;  text-shadow: 0pt 0pt 1.5em rgb(0, 255,0);">D</span></a>,<a href="https://www.rune-server.ee/members/140769-father/" rel="nofollow">Father</a>,<a href="https://www.rune-server.ee/members/101125-george/" rel="nofollow"><img alt="Respected Member" src="Archive%20Combat%20Formulas_files/vet.webp" title="Respected Member" border="0"><span style="color: #008080;">George</span></a>,<a href="https://www.rune-server.ee/members/133212-greg/" rel="nofollow"><img alt="Archive: Combat Formulas" src="Archive%20Combat%20Formulas_files/prgrmr.webp" title="Archive: Combat Formulas" border="0"><font color="#6666c9">Greg</font></a>,<a href="https://www.rune-server.ee/members/333003-guardian/" rel="nofollow"><s>Guardian</s></a>,<a href="https://www.rune-server.ee/members/255425-hc747/" rel="nofollow">hc747</a>,<a href="https://www.rune-server.ee/members/88899-jire/" rel="nofollow"><img alt="Extreme Donator" src="Archive%20Combat%20Formulas_files/xdon.webp" title="Extreme Donator" border="0"><span style="color:#02B41D;  text-shadow: 0pt 0pt 1.5em rgb(0, 255,0);">Jire</span></a>,<a href="https://www.rune-server.ee/members/278264-klem/" rel="nofollow"><img alt="Normal Donator" src="Archive%20Combat%20Formulas_files/don.webp" title="Normal Donator" border="0"><span style="color:red; text-shadow: 0pt 0pt 0.5em rgb(255, 0, 0);">Klem</span></a>,<a href="https://www.rune-server.ee/members/317132-kris/" rel="nofollow"><img alt="Respected Member" src="Archive%20Combat%20Formulas_files/vet.webp" title="Respected Member" border="0"><span style="color: #008080;">Kris</span></a>,<a href="https://www.rune-server.ee/members/236382-reverenddread/" rel="nofollow">ReverendDread</a>,<a href="https://www.rune-server.ee/members/262330-standev/" rel="nofollow"><img alt="Super Donator" src="Archive%20Combat%20Formulas_files/sdon.webp" title="Super Donator" border="0"><span style="color:#1c7abf ; text-shadow: 0pt 0pt 1em rgb(0, 0, 255);">StanDev</span></a>,<a href="https://www.rune-server.ee/members/225495-stimulant/" rel="nofollow">Stimulant</a>,<a href="https://www.rune-server.ee/members/361860-theblackparade/" rel="nofollow">TheBlackParade</a>,<a href="https://www.rune-server.ee/members/339228-tomm0017/" rel="nofollow"><img alt="Archive: Combat Formulas" src="Archive%20Combat%20Formulas_files/prgrmr.webp" title="Archive: Combat Formulas" border="0"><font color="#6666c9">Tomm0017</font></a>,<a href="https://www.rune-server.ee/members/285605-uint32_t/" rel="nofollow"><img alt="Forum Moderator" src="Archive%20Combat%20Formulas_files/mod.webp" title="Forum Moderator" border="0"><span style="color: #FF9933; font-weight: bold;">uint32_t</span></a>,<a href="https://www.rune-server.ee/members/357131-zerikoth/" rel="nofollow"><s>Zerikoth</s></a>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+<hr>
+</li>
+<li class="postbitlegacy postbitim postcontainer" id="post_5735201">
+
+<div class="outer_border">
+<div class="posthead">
+<span class="nodecontrols">
+<a name="post5735201" href="https://www.rune-server.ee/runescape-development/rs2-server/informative-threads/688072-archive-combat-formulas-post5735201.html#post5735201" class="postcounter">#2</a><a id="postcount5735201" name="2"></a>
+</span>
+<span class="posttitle icon">&nbsp;</span>
+</div>
+</div>
+<div class="outer_border remove_border_top">
+<div class="postdetails">
+<div class="userinfo userinfo_extreme">
+<div class="username_container">
+<div class="popupmenu memberaction" id="yui-gen11">
+<a class="username offline popupctrl" href="https://www.rune-server.ee/members/224513-arham/" title="Arham is offline" id="yui-gen13"><strong><img alt="Extreme Donator" src="Archive%20Combat%20Formulas_files/xdon.webp" title="Extreme Donator" border="0"><span style="color:#02B41D;  text-shadow: 0pt 0pt 1.5em rgb(0, 255,0);">Arham</span></strong></a>
+<ul class="popupbody memberaction_body" id="yui-gen12">
+<li class="left">
+<a href="https://www.rune-server.ee/members/224513-arham/" class="siteicon_profile">
+View Profile
+</a>
+</li>
+<li class="right">
+<a href="https://www.rune-server.ee/search.php?do=finduser&amp;userid=224513&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+View Forum Posts
+</a>
+</li>
+<li class="left">
+<a href="https://www.rune-server.ee/private.php?do=newpm&amp;u=224513" class="siteicon_message" rel="nofollow">
+Private Message
+</a>
+</li>
+</ul>
+</div>
+<img class="inlineimg onlinestatus" src="Archive%20Combat%20Formulas_files/user-offline.png" alt="Arham is offline" title="Arham is offline" border="0">
+</div>
+<span class="usertitle">
+(Official) Thanksgiver
+</span>
+<span class="rank"><img src="Archive%20Combat%20Formulas_files/exdone.webp" alt="" border=""><img src="Archive%20Combat%20Formulas_files/exdone.webp" alt="" border=""><img src="Archive%20Combat%20Formulas_files/exdone.webp" alt="" border=""><br><img src="Archive%20Combat%20Formulas_files/bandos2900.webp" alt="" border=""></span>
+<span class="postbit_reputation" id="repdisplay_5735201_224513" title="Arham is truly magnificent">
+<img class="repimg" src="Archive%20Combat%20Formulas_files/reputation_goldstar.webp" alt="">
+<img class="repimg" src="Archive%20Combat%20Formulas_files/reputation_goldstar.webp" alt="">
+<img class="repimg" src="Archive%20Combat%20Formulas_files/reputation_bronzestar.webp" alt="">
+<img class="repimg" src="Archive%20Combat%20Formulas_files/reputation_bronzestar.webp" alt=""><br>
+<img class="repimg" src="Archive%20Combat%20Formulas_files/reputation_green.webp" alt="">
+<img class="repimg" src="Archive%20Combat%20Formulas_files/reputation_green.webp" alt="">
+<img class="repimg" src="Archive%20Combat%20Formulas_files/reputation_green.webp" alt="">
+<img class="repimg" src="Archive%20Combat%20Formulas_files/reputation_green.webp" alt="">
+</span>
+<a class="postuseravatar" href="https://www.rune-server.ee/members/224513-arham/" title="Arham is offline">
+<img src="Archive%20Combat%20Formulas_files/avatar224513_74.webp" alt="Arham's Avatar" title="Arham's Avatar">
+</a>
+<hr>
+<dl class="userinfo_extra">
+<dt>Join Date</dt> <dd>Jan 2013</dd>
+<dt>Age</dt> <dd>22</dd>
+<dt>Posts</dt> <dd>3,413</dd>
+<div class="post_field"><dt>Thanks given</dt> <dd>7,246</dd></div>
+<div class="post_field"><dt>Thanks received</dt><dd>1,934</dd></div>
+</dl>
+<dl class="user_rep">
+<dt>Rep Power</dt>
+<dd id="reppower_5735201_224513">3905</dd>
+</dl>
+<div class="imlinks">
+<a rel="nofollow" href="https://discordapp.com/users/340217616683630621" target="_blank"><img alt="Archive: Combat Formulas" src="Archive%20Combat%20Formulas_files/im_discord.webp" title="Archive: Combat Formulas"></a>
+</div>
+</div>
+<div class="postbody">
+<div class="postrow has_after_content">
+<span class="postdate old">
+<span class="date">03-16-2021, <span class="time">09:13 PM</span></span>
+</span>
+<span class="float_right">
+</span>
+<div class="hr"></div>
+<div class="content">
+<div id="post_message_5735201">
+<blockquote class="postcontent restore ">
+Here's the missing portion in 5.2b for Prayer bonuses to the accuracy formula:<br>
+<div class="bbcode_container">
+<div class="bbcode_quote">
+<div class="quote_container">
+<div class="bbcode_quote_container"></div>
+b. Multiply the level by the prayer adjustment:<br>
+<br>
+Melee:<br>
+<ul><li style="">Clarity of thought: 1.05</li><li style="">Improved reflexes: 1.10</li><li style="">Incredible reflexes: 1.15</li><li style="">Chivalry: 1.15</li><li style="">Piety: 1.20</li></ul><br>
+<br>
+Ranged:<br>
+<ul><li style="">Sharp eye: 1.05</li><li style="">Hawk eye: 1.10</li><li style="">Eagle eye: 1.15</li></ul><br>
+<br>
+Magic attack:<br>
+<ul><li style="">Mystic will: 1.05</li><li style="">Mystic lore: 1.10</li><li style="">Mystic might: 1.15</li></ul><br>
+<br>
+Defence:<br>
+<ul><li style="">Thick skin: 1.05</li><li style="">Rock skin: 1.10</li><li style="">Steel skin: 1.15</li><li style="">Chivalry: 1.20</li><li style="">Piety: 1.25</li></ul>
+</div>
+</div>
+</div>
+</blockquote>
+</div>
+</div>
+</div>
+<div class="after_content">
+<div style="clear:both"></div>
+<div class="hr vbsig legacy"></div>
+<div class="vbsig signaturecontainer"><div class="cms_table"><table class="cms_table" width="0%" align="center"><tbody><tr class="cms_table_tr" valign="top"><td class="cms_table_td"><div style="text-align: center;"><a href="https://www.rune-server.ee/runescape-development/rs2-server/projects/701423-shanty.html" target="_blank"><img src="Archive%20Combat%20Formulas_files/VCxfdY7.png" alt="Attached image" title="Attached image" border="0"></a></div></td>
+<td class="cms_table_td"><div style="text-align: left;"><img src="Archive%20Combat%20Formulas_files/TXPIB8R.gif" alt="Attached image" title="Attached image" border="0"></div></td>
+</tr>
+</tbody></table></div>
+<div class="cms_table"><table class="cms_table" width="49%" align="center"><tbody><tr class="cms_table_tr" valign="top"><td class="cms_table_td"><div class="bbcode_container">
+<div class="bbcode_quote">
+<div class="quote_container">
+<div class="bbcode_quote_container"></div>
+<div class="bbcode_postedby">
+<img src="Archive%20Combat%20Formulas_files/quote_icon.webp" alt="Quote" title="Quote"> Originally Posted by <strong>MrClassic</strong>
+<a href="https://www.rune-server.ee/miscellaneous/spam/686158-i-am-thanker-post5635506.html#post5635506" rel="nofollow"><img class="inlineimg" src="Archive%20Combat%20Formulas_files/viewpost-right.webp" alt="View Post" title="View Post"></a>
+</div>
+<div class="message">Arham is the official thanker!</div>
+</div>
+</div>
+</div></td>
+</tr>
+</tbody></table></div>
+<div style="text-align: center;"><span style="font-family: Times New Roman"><font size="4">List of my work <a href="http://pastebin.com/UDktpsuA" target="_blank" rel="nofollow">here</a>!</font></span></div></div>
+</div>
+<div class="cleardiv"></div>
+</div>
+</div>
+<div class="postfoot">
+
+<div class="textcontrols floatcontainer">
+<span class="postcontrols">
+<img style="display:none" id="progress_5735201" src="Archive%20Combat%20Formulas_files/progress.gif" alt="">
+<a id="qrwq_5735201" class="newreply" href="https://www.rune-server.ee/newreply.php?do=newreply&amp;p=5735201" rel="nofollow"><img id="quoteimg_5735201" src="Archive%20Combat%20Formulas_files/quote.gif" alt="Reply With Quote" &nbsp;="" title="Reply With Quote"></a>
+<span class="seperator">&nbsp;</span>
+</span>
+<span class="postlinking">
+</span>
+
+</div>
+</div>
+</div>
+<div class="vbcat_bottom"><div class="vbcat_bottom_left"><div class="vbcat_bottom_right">&nbsp;</div></div></div>
+<hr>
+</li>
+<li class="postbitlegacy postbitim" id="post_thanks_box_5735201">
+<div class="postbody" style="margin-left: 0">
+<div class="postrow">
+<h2 class="title">
+Thankful user:
+</h2>
+<div class="content">
+<div id="post_thanks_bit_5735201">
+<blockquote class="postcontent restore">
+<a href="https://www.rune-server.ee/members/248145-clem585/" rel="nofollow"><img alt="Contributor" src="Archive%20Combat%20Formulas_files/contributor.webp" title="Contributor" border="0"><span style="color:#89CFF0;">clem585</span></a>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+<hr>
+</li>
+<li class="postbitlegacy postbitim postcontainer" id="post_5779965">
+
+<div class="outer_border">
+<div class="posthead">
+<span class="nodecontrols">
+<a name="post5779965" href="https://www.rune-server.ee/runescape-development/rs2-server/informative-threads/688072-archive-combat-formulas-post5779965.html#post5779965" class="postcounter">#3</a><a id="postcount5779965" name="3"></a>
+</span>
+<span class="posttitle icon">&nbsp;</span>
+</div>
+</div>
+<div class="outer_border remove_border_top">
+<div class="postdetails">
+<div class="userinfo">
+<div class="username_container">
+<div class="popupmenu memberaction" id="yui-gen14">
+<a class="username offline popupctrl" href="https://www.rune-server.ee/members/337662-anamedsoul/" title="aNamedSoul is offline" id="yui-gen16"><strong>aNamedSoul</strong></a>
+<ul class="popupbody memberaction_body" id="yui-gen15">
+<li class="left">
+<a href="https://www.rune-server.ee/members/337662-anamedsoul/" class="siteicon_profile">
+View Profile
+</a>
+</li>
+<li class="right">
+<a href="https://www.rune-server.ee/search.php?do=finduser&amp;userid=337662&amp;contenttype=vBForum_Post&amp;showposts=1" class="siteicon_forum" rel="nofollow">
+View Forum Posts
+</a>
+</li>
+<li class="left">
+<a href="https://www.rune-server.ee/private.php?do=newpm&amp;u=337662" class="siteicon_message" rel="nofollow">
+Private Message
+</a>
+</li>
+</ul>
+</div>
+<img class="inlineimg onlinestatus" src="Archive%20Combat%20Formulas_files/user-offline.png" alt="aNamedSoul is offline" title="aNamedSoul is offline" border="0">
+</div>
+<span class="usertitle">
+Registered Member
+</span>
+<span class="rank"><img src="Archive%20Combat%20Formulas_files/Runea50.webp" alt="" border=""></span>
+<span class="postbit_reputation" id="repdisplay_5779965_337662" title="aNamedSoul is an unknown quantity at this point">
+<img class="repimg" src="Archive%20Combat%20Formulas_files/reputation_green.webp" alt="">
+<img class="repimg" src="Archive%20Combat%20Formulas_files/reputation_green.webp" alt="">
+<img class="repimg" src="Archive%20Combat%20Formulas_files/reputation_green.webp" alt="">
+<img class="repimg" src="Archive%20Combat%20Formulas_files/reputation_green.webp" alt="">
+<img class="repimg" src="Archive%20Combat%20Formulas_files/reputation_green.webp" alt="">
+<img class="repimg" src="Archive%20Combat%20Formulas_files/reputation_greenh.webp" alt="">
+<img class="repimg" src="Archive%20Combat%20Formulas_files/reputation_greenh.webp" alt="">
+<img class="repimg" src="Archive%20Combat%20Formulas_files/reputation_greenh.webp" alt="">
+<img class="repimg" src="Archive%20Combat%20Formulas_files/reputation_greenh.webp" alt="">
+<img class="repimg" src="Archive%20Combat%20Formulas_files/reputation_greenh.webp" alt="">
+</span>
+<hr>
+<dl class="userinfo_extra">
+<dt>Join Date</dt> <dd>Sep 2017</dd>
+<dt>Posts</dt> <dd>111</dd>
+<div class="post_field"><dt>Thanks given</dt> <dd>24</dd></div>
+<div class="post_field"><dt>Thanks received</dt><dd>51</dd></div>
+</dl>
+<dl class="user_rep">
+
+<dt>Rep Power</dt>
+<dd id="reppower_5779965_337662">22</dd>
+</dl>
+<div class="imlinks">
+<a rel="nofollow" href="https://discordapp.com/users/251474176144179212" target="_blank"><img alt="Archive: Combat Formulas" src="Archive%20Combat%20Formulas_files/im_discord.webp" title="Archive: Combat Formulas"></a>
+</div>
+</div>
+<div class="postbody">
+<div class="postrow has_after_content">
+<span class="postdate old">
+<span class="date">10-07-2022, <span class="time">12:48 AM</span></span>
+</span>
+<span class="float_right">
+</span>
+<div class="hr"></div>
+<div class="content">
+<div id="post_message_5779965">
+<blockquote class="postcontent restore ">
+Bit late now but anyone know what the missing, 6.3 and 6.4 posts are?
+</blockquote>
+</div>
+</div>
+</div>
+<div class="after_content">
+<div style="clear:both"></div>
+<div class="hr vbsig legacy"></div>
+<div class="vbsig signaturecontainer"><div style="text-align: center;"><img src="Archive%20Combat%20Formulas_files/TLaNsdG.png" alt="Attached image" title="Attached image" border="0"></div></div>
+</div>
+<div class="cleardiv"></div>
+</div>
+</div>
+<div class="postfoot">
+
+<div class="textcontrols floatcontainer">
+<span class="postcontrols">
+<img style="display:none" id="progress_5779965" src="Archive%20Combat%20Formulas_files/progress.gif" alt="">
+<a id="qrwq_5779965" class="newreply" href="https://www.rune-server.ee/newreply.php?do=newreply&amp;p=5779965" rel="nofollow"><img id="quoteimg_5779965" src="Archive%20Combat%20Formulas_files/quote.gif" alt="Reply With Quote" &nbsp;="" title="Reply With Quote"></a>
+<span class="seperator">&nbsp;</span>
+</span>
+<span class="postlinking">
+</span>
+
+</div>
+</div>
+</div>
+<div class="vbcat_bottom"><div class="vbcat_bottom_left"><div class="vbcat_bottom_right">&nbsp;</div></div></div>
+<hr>
+</li>
+<li class="postbitlegacy postbitim" id="post_thanks_box_5779965" style="display:none">
+</li>
+</ol>
+<div class="separator"></div>
+<div class="postlistfoot">
+</div>
+</div>
+<div id="below_postlist" class="noinlinemod below_postlist">
+<div id="pagination_bottom" class="pagination_bottom">
+<div class="clear"></div>
+<div class="navpopupmenu popupmenu nohovermenu" id="showthread_navpopup">
+<span class="shade">Quick Navigation</span>
+<a href="https://www.rune-server.ee/runescape-development/rs2-server/informative-threads/688072-archive-combat-formulas.html" class="popupctrl" id="yui-gen18"><span class="ctrlcontainer">Informative Threads</span></a>
+<a href="https://www.rune-server.ee/runescape-development/rs2-server/informative-threads/688072-archive-combat-formulas.html#top" class="textcontrol" onclick="document.location.hash='top';return false;">Top</a>
+<ul class="navpopupbody popupbody" id="yui-gen17">
+<li class="optionlabel">Site Areas</li>
+<li><a href="https://www.rune-server.ee/usercp.php">Settings</a></li>
+<li><a href="https://www.rune-server.ee/private.php">Private Messages</a></li>
+<li><a href="https://www.rune-server.ee/subscription.php">Subscriptions</a></li>
+<li><a href="https://www.rune-server.ee/online.php">Who's Online</a></li>
+<li><a href="https://www.rune-server.ee/search.php">Search Forums</a></li>
+<li><a href="https://www.rune-server.ee/forum.php">Forums Home</a></li>
+<li class="optionlabel">Forums</li>
+<li><a href="https://www.rune-server.ee/the-site/">The Site</a>
+<ol class="d1">
+<li><a href="https://www.rune-server.ee/the-site/announcements/">Announcements</a>
+<ol class="d2">
+<li><a href="https://www.rune-server.ee/the-site/announcements/tweak-s-/">Tweak(s)</a></li>
+<li><a href="https://www.rune-server.ee/the-site/announcements/archive/">Archive</a></li>
+</ol>
+</li>
+<li><a href="https://www.rune-server.ee/index.php?pageid=Rules">Official Forum Rules</a></li>
+<li><a href="https://www.rune-server.ee/payments.php#sb_3"></a></li>
+<li><a href="https://www.rune-server.ee/the-site/knowledge-base/">Knowledge Base</a></li>
+<li><a href="https://www.rune-server.ee/the-site/forum-support-center/">Forum Support Center</a>
+<ol class="d2">
+<li><a href="https://www.rune-server.ee/the-site/forum-support-center/suggestions/">Suggestions</a></li>
+<li><a href="https://www.rune-server.ee/the-site/forum-support-center/complaints/">Complaints</a></li>
+<li><a href="https://www.rune-server.ee/the-site/forum-support-center/defects/">Defects</a></li>
+<li><a href="https://www.rune-server.ee/the-site/forum-support-center/forum-related-help/">Forum Related Help</a></li>
+</ol>
+</li>
+<li><a href="https://www.rune-server.ee/the-site/accounts/">Accounts</a>
+<ol class="d2">
+<li><a href="https://www.rune-server.ee/the-site/accounts/appeals/">Appeals</a>
+<ol class="d3">
+<li><a href="https://www.rune-server.ee/the-site/accounts/appeals/appeals/">Appeals</a></li>
+<li><a href="https://www.rune-server.ee/the-site/accounts/appeals/archived-appeals/">Archived Appeals</a></li>
+</ol>
+</li>
+<li><a href="https://www.rune-server.ee/the-site/accounts/requests/">Requests</a>
+<ol class="d3">
+<li><a href="https://www.rune-server.ee/the-site/accounts/requests/password/">Password</a></li>
+<li><a href="https://www.rune-server.ee/profile.php?do=editprofile">Usernames</a></li>
+<li><a href="https://www.rune-server.ee/the-site/accounts/requests/miscellaneous/">Miscellaneous</a></li>
+<li><a href="https://www.rune-server.ee/the-site/accounts/requests/archive-s-/">Archive(s)</a></li>
+</ol>
+</li>
+<li><a href="https://www.rune-server.ee/the-site/accounts/reports/">Reports</a>
+<ol class="d3">
+<li><a href="https://www.rune-server.ee/the-site/accounts/reports/report-staff/">Report Staff</a></li>
+<li><a href="https://www.rune-server.ee/the-site/accounts/reports/report-members/">Report Members</a>
+<ol class="d4">
+<li><a href="https://www.rune-server.ee/the-site/accounts/reports/report-members/archived-reports/">Archived Reports</a></li>
+<li><a href="https://www.rune-server.ee/the-site/accounts/reports/report-members/scam-reports/">Scam Reports</a></li>
+<li><a href="https://www.rune-server.ee/the-site/accounts/reports/report-members/shoutbox-reports/">Shoutbox Reports</a></li>
+<li><a href="https://www.rune-server.ee/the-site/accounts/reports/report-members/general-reports/">General Reports</a></li>
+</ol>
+</li>
+</ol>
+</li>
+<li><a href="https://www.rune-server.ee/the-site/accounts/donations/">Donations</a></li>
+</ol>
+</li>
+<li><a href="https://www.rune-server.ee/the-site/additional-forums/">Additional Forums</a>
+<ol class="d2">
+<li><a href="https://www.rune-server.ee/the-site/additional-forums/contributors/">Contributors</a>
+<ol class="d3">
+<li><a href="https://www.rune-server.ee/the-site/additional-forums/contributors/nominations/">Nominations</a>
+<ol class="d4">
+<li><a href="https://www.rune-server.ee/the-site/additional-forums/contributors/nominations/archives/">Archives</a></li>
+</ol>
+</li>
+</ol>
+</li>
+<li><a href="https://www.rune-server.ee/the-site/additional-forums/affiliates/">Affiliates</a></li>
+<li><a href="https://www.rune-server.ee/the-site/additional-forums/designers/">Designers</a>
+<ol class="d3">
+<li><a href="https://www.rune-server.ee/the-site/additional-forums/designers/nominations/">Nominations</a></li>
+</ol>
+</li>
+<li><a href="https://www.rune-server.ee/the-site/additional-forums/donators/">Donators</a></li>
+<li><a href="https://www.rune-server.ee/the-site/additional-forums/programmers/">Programmers</a>
+<ol class="d3">
+<li><a href="https://www.rune-server.ee/the-site/additional-forums/programmers/nominations/">Nominations</a>
+<ol class="d4">
+<li><a href="https://www.rune-server.ee/the-site/additional-forums/programmers/nominations/archives/">Archives</a></li>
+</ol>
+</li>
+</ol>
+</li>
+<li><a href="https://www.rune-server.ee/the-site/additional-forums/respected-members/">Respected Members</a></li>
+<li><a href="https://www.rune-server.ee/the-site/additional-forums/veterans/">Veterans</a></li>
+<li><a href="https://www.rune-server.ee/the-site/additional-forums/staff/">Staff</a>
+<ol class="d3">
+<li><a href="https://www.rune-server.ee/the-site/additional-forums/staff/administrator-notes/">Administrator Notes</a></li>
+<li><a href="https://www.rune-server.ee/the-site/additional-forums/staff/reported-posts/">Reported Posts</a></li>
+<li><a href="https://www.rune-server.ee/the-site/additional-forums/staff/completed-donations-archive/">Completed Donations Archive</a></li>
+<li><a href="https://www.rune-server.ee/the-site/additional-forums/staff/moderator-to-moderator-report-s-/">Moderator to Moderator report(s)</a></li>
+ <li><a href="https://www.rune-server.ee/the-site/additional-forums/staff/infractions/">Infractions</a></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><a href="https://www.rune-server.ee/general-discussion/">General Discussion</a>
+<ol class="d1">
+<li><a href="https://www.rune-server.ee/general-discussion/the-red-carpet/">The Red Carpet</a></li>
+<li><a href="https://www.rune-server.ee/general-discussion/chat/">Chat</a></li>
+<li><a href="https://www.rune-server.ee/general-discussion/literature-and-language-arts/">Literature &amp; Language Arts</a></li>
+<li><a href="https://www.rune-server.ee/general-discussion/media/">Media</a>
+<ol class="d2">
+<li><a href="https://www.rune-server.ee/general-discussion/media/anime/">Anime</a></li>
+<li><a href="https://www.rune-server.ee/general-discussion/media/television-and-films/">Television and Films</a></li>
+<li><a href="https://www.rune-server.ee/general-discussion/media/videos/">Videos</a></li>
+<li><a href="https://www.rune-server.ee/general-discussion/media/music/">Music</a></li>
+<li><a href="https://www.rune-server.ee/general-discussion/media/images/">Images</a></li>
+</ol>
+</li>
+<li><a href="https://www.rune-server.ee/general-discussion/sports/">Sports</a></li>
+<li><a href="https://www.rune-server.ee/general-discussion/humor/">Humor</a></li>
+<li><a href="https://www.rune-server.ee/general-discussion/homework/">Homework</a></li>
+<li><a href="https://www.rune-server.ee/general-discussion/voting/">Voting</a></li>
+</ol>
+</li>
+<li><a href="https://www.rune-server.ee/runescape-development/">RuneScape Development</a>
+<ol class="d1">
+<li><a href="https://www.rune-server.ee/runescape-development/rs2-server/">RS2 Server</a>
+<ol class="d2">
+<li><a href="https://www.rune-server.ee/runescape-development/rs2-server/advertise/">Advertise</a></li>
+<li><a href="https://www.rune-server.ee/runescape-development/rs2-server/help/">Help</a></li>
+<li><a href="https://www.rune-server.ee/runescape-development/rs2-server/projects/">Projects</a></li>
+<li><a href="https://www.rune-server.ee/runescape-development/rs2-server/show-off/">Show-off</a></li>
+<li><a href="https://www.rune-server.ee/runescape-development/rs2-server/snippets/">Snippets</a></li>
+<li><a href="https://www.rune-server.ee/runescape-development/rs2-server/tutorials/">Tutorials</a></li>
+<li><a href="https://www.rune-server.ee/runescape-development/rs2-server/tools/">Tools</a></li>
+<li><a href="https://www.rune-server.ee/runescape-development/rs2-server/informative-threads/">Informative Threads</a></li>
+<li><a href="https://www.rune-server.ee/runescape-development/rs2-server/requests/">Requests</a></li>
+<li><a href="https://www.rune-server.ee/runescape-development/rs2-server/configuration/">Configuration</a></li>
+<li><a href="https://www.rune-server.ee/runescape-development/rs2-server/downloads/">Downloads</a></li>
+</ol>
+</li>
+<li><a href="https://www.rune-server.ee/runescape-development/rs2-client/">RS2 Client</a>
+<ol class="d2">
+<li><a href="https://www.rune-server.ee/runescape-development/rs2-client/help/">Help</a></li>
+<li><a href="https://www.rune-server.ee/runescape-development/rs2-client/projects/">Projects</a></li>
+<li><a href="https://www.rune-server.ee/runescape-development/rs2-client/show-off/">Show-off</a></li>
+<li><a href="https://www.rune-server.ee/runescape-development/rs2-client/snippets/">Snippets</a></li>
+<li><a href="https://www.rune-server.ee/runescape-development/rs2-client/tutorials/">Tutorials</a></li>
+<li><a href="https://www.rune-server.ee/runescape-development/rs2-client/tools/">Tools</a></li>
+<li><a href="https://www.rune-server.ee/runescape-development/rs2-client/requests/">Requests</a></li>
+<li><a href="https://www.rune-server.ee/runescape-development/rs2-client/configuration/">Configuration</a></li>
+<li><a href="https://www.rune-server.ee/runescape-development/rs2-client/downloads/">Downloads</a></li>
+<li><a href="https://www.rune-server.ee/runescape-development/rs2-client/graphics/">Graphics</a></li>
+<li><a href="https://www.rune-server.ee/runescape-development/rs2-client/models/">Models</a></li>
+</ol>
+</li>
+<li><a href="https://www.rune-server.ee/runescape-development/rs-503-client-and-server/">RS 503+ Client &amp; Server</a>
+<ol class="d2">
+<li><a href="https://www.rune-server.ee/runescape-development/rs-503-client-and-server/advertise/">Advertise</a></li>
+<li><a href="https://www.rune-server.ee/runescape-development/rs-503-client-and-server/help/">Help</a></li>
+<li><a href="https://www.rune-server.ee/runescape-development/rs-503-client-and-server/projects/">Projects</a></li>
+<li><a href="https://www.rune-server.ee/runescape-development/rs-503-client-and-server/show-off/">Show-off</a></li>
+<li><a href="https://www.rune-server.ee/runescape-development/rs-503-client-and-server/snippets/">Snippets</a></li>
+<li><a href="https://www.rune-server.ee/runescape-development/rs-503-client-and-server/tutorials/">Tutorials</a></li>
+<li><a href="https://www.rune-server.ee/runescape-development/rs-503-client-and-server/informative-threads/">Informative Threads</a></li>
+<li><a href="https://www.rune-server.ee/runescape-development/rs-503-client-and-server/requests/">Requests</a></li>
+<li><a href="https://www.rune-server.ee/runescape-development/rs-503-client-and-server/configuration/">Configuration</a></li>
+<li><a href="https://www.rune-server.ee/runescape-development/rs-503-client-and-server/downloads/">Downloads</a></li>
+</ol>
+</li>
+<li><a href="https://www.rune-server.ee/runescape-development/rs-classic/">RS Classic</a>
+<ol class="d2">
+<li><a href="https://www.rune-server.ee/runescape-development/rs-classic/help/">Help</a></li>
+<li><a href="https://www.rune-server.ee/runescape-development/rs-classic/tutorials/">Tutorials</a></li>
+<li><a href="https://www.rune-server.ee/runescape-development/rs-classic/projects/">Projects</a></li>
+<li><a href="https://www.rune-server.ee/runescape-development/rs-classic/sprites/">Sprites</a></li>
+<li><a href="https://www.rune-server.ee/runescape-development/rs-classic/downloads/">Downloads</a></li>
+</ol>
+</li>
+</ol>
+</li>
+<li><a href="https://www.rune-server.ee/official-runescape/">Official RuneScape</a>
+<ol class="d1">
+<li><a href="https://www.rune-server.ee/official-runescape/chat/">Chat</a></li>
+<li><a href="https://www.rune-server.ee/official-runescape/guides/">Guides</a></li>
+<li><a href="https://www.rune-server.ee/official-runescape/media/">Media</a></li>
+<li><a href="https://www.rune-server.ee/official-runescape/runescape-underground/">RuneScape Underground</a></li>
+<li><a href="https://www.rune-server.ee/official-runescape/old-school-rs-2007-/">Old School RS (2007)</a></li>
+</ol>
+</li>
+<li><a href="https://www.rune-server.ee/black-market/">Black Market</a>
+<ol class="d1">
+<li><a href="https://www.rune-server.ee/black-market/rsps-virtual-items/">RSPS / Virtual Items</a>
+<ol class="d2">
+<li><a href="https://www.rune-server.ee/black-market/rsps-virtual-items/buying/">Buying</a></li>
+<li><a href="https://www.rune-server.ee/black-market/rsps-virtual-items/selling/">Selling</a></li>
+</ol>
+</li>
+<li><a href="https://www.rune-server.ee/black-market/runescape-market/">Runescape Market</a>
+<ol class="d2">
+<li><a href="https://www.rune-server.ee/black-market/runescape-market/buying/">Buying</a>
+<ol class="d3">
+<li><a href="https://www.rune-server.ee/black-market/runescape-market/buying/accounts/">Accounts</a></li>
+<li><a href="https://www.rune-server.ee/black-market/runescape-market/buying/gold-and-items/">Gold &amp; Items</a></li>
+<li><a href="https://www.rune-server.ee/black-market/runescape-market/buying/services/">Services</a></li>
+</ol>
+</li>
+<li><a href="https://www.rune-server.ee/black-market/runescape-market/selling/">Selling</a>
+<ol class="d3">
+<li><a href="https://www.rune-server.ee/black-market/runescape-market/selling/accounts/">Accounts</a></li>
+<li><a href="https://www.rune-server.ee/black-market/runescape-market/selling/gold-and-items/">Gold &amp; Items</a></li>
+<li><a href="https://www.rune-server.ee/black-market/runescape-market/selling/services/">Services</a></li>
+</ol>
+</li>
+</ol>
+</li>
+<li><a href="https://www.rune-server.ee/black-market/other-games-market/">Other Games Market</a>
+<ol class="d2">
+<li><a href="https://www.rune-server.ee/black-market/other-games-market/buying/">Buying</a></li>
+<li><a href="https://www.rune-server.ee/black-market/other-games-market/selling/">Selling</a></li>
+</ol>
+</li>
+<li><a href="https://www.rune-server.ee/black-market/physical-items/">Physical Items</a>
+<ol class="d2">
+<li><a href="https://www.rune-server.ee/black-market/physical-items/buying/">Buying</a></li>
+<li><a href="https://www.rune-server.ee/black-market/physical-items/selling/">Selling</a></li>
+</ol>
+</li>
+<li><a href="https://www.rune-server.ee/black-market/freelance-middleman-services/">Freelance Middleman Services</a></li>
+<li><a href="https://www.rune-server.ee/black-market/price-check/">Price Check</a></li>
+<li><a href="https://www.rune-server.ee/black-market/hosting/">Hosting</a></li>
+</ol>
+</li>
+<li><a href="https://www.rune-server.ee/gaming/">Gaming</a>
+<ol class="d1">
+<li><a href="https://www.rune-server.ee/gaming/console/">Console</a></li>
+<li><a href="https://www.rune-server.ee/gaming/pc/">PC</a></li>
+</ol>
+</li>
+<li><a href="https://www.rune-server.ee/graphics/">Graphics</a>
+<ol class="d1">
+<li><a href="https://www.rune-server.ee/graphics/general/">General</a></li>
+<li><a href="https://www.rune-server.ee/graphics/competitions/">Competitions</a>
+<ol class="d2">
+<li><a href="https://www.rune-server.ee/graphics/competitions/official/">Official</a></li>
+<li><a href="https://www.rune-server.ee/graphics/competitions/battles/">Battles</a></li>
+</ol>
+</li>
+<li><a href="https://www.rune-server.ee/graphics/showcase/">Showcase</a>
+<ol class="d2">
+<li><a href="https://www.rune-server.ee/graphics/showcase/runescape/">Runescape</a></li>
+<li><a href="https://www.rune-server.ee/graphics/showcase/large-art/">Large Art</a></li>
+</ol>
+</li>
+<li><a href="https://www.rune-server.ee/graphics/help/">Help</a></li>
+<li><a href="https://www.rune-server.ee/graphics/requests/">Requests</a></li>
+<li><a href="https://www.rune-server.ee/graphics/resources/">Resources</a>
+<ol class="d2">
+<li><a href="https://www.rune-server.ee/graphics/resources/tutorials/">Tutorials</a></li>
+<li><a href="https://www.rune-server.ee/graphics/resources/pack-releases/">Pack Releases</a></li>
+</ol>
+</li>
+</ol>
+</li>
+<li><a href="https://www.rune-server.ee/programming/">Programming</a>
+<ol class="d1">
+<li><a href="https://www.rune-server.ee/programming/application-development/">Application Development</a></li>
+<li><a href="https://www.rune-server.ee/programming/website-development/">Website Development</a></li>
+</ol>
+</li>
+<li><a href="https://www.rune-server.ee/computing/">Computing</a>
+<ol class="d1">
+<li><a href="https://www.rune-server.ee/computing/software/">Software</a></li>
+<li><a href="https://www.rune-server.ee/computing/hardware/">Hardware</a></li>
+<li><a href="https://www.rune-server.ee/computing/showoff/">Showoff</a></li>
+</ol>
+</li>
+<li><a href="https://www.rune-server.ee/miscellaneous/">Miscellaneous</a>
+<ol class="d1">
+<li><a href="https://www.rune-server.ee/miscellaneous/spam/">Spam</a></li>
+<li><a href="https://www.rune-server.ee/miscellaneous/forum-games/">Forum Games</a></li>
+</ol>
+</li>
+</ul>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+<br>
+
+<table class="vbs_forumrow table vbs_navlinks">
+<tbody><tr class="vbs_forumrow vbs_thead">
+<td>
+<strong>«</strong>
+<a href="https://www.rune-server.ee/runescape-development/rs2-server/informative-threads/688072-archive-combat-formulas-prev-thread.html" rel="nofollow">Previous Thread</a>
+|
+<a href="https://www.rune-server.ee/runescape-development/rs2-server/informative-threads/688072-archive-combat-formulas-next-thread.html" rel="nofollow">Next Thread</a>
+<strong>»</strong>
+</td>
+</tr>
+</tbody></table>
+
+<div id="thread_info" class="thread_info">
+<table class="vbs_forumrow table vbs_thead">
+<tbody><tr class="vbs_forumrow vbs_thead">
+<td class="vbs_forumdata">Thread Information</td>
+</tr>
+</tbody></table>
+<table class="vbs_forumrow table">
+<tbody><tr class="vbs_forumrow">
+<td class="vbs_forumdata alt1">
+<h5>Users Browsing this Thread</h5>
+<div>
+<p>There are currently 1 users browsing this thread. <span class="shade">(0 members and 1 guests)</span></p>
+<ol class="commalist">
+</ol>
+</div>
+</td>
+</tr>
+</tbody></table>
+<br>
+<h2 class="blockhead" style="padding-top:5px;"><a rel="nofollow" href="https://www.rune-server.ee/usertag.php?do=list&amp;action=tags&amp;t=688072">User Tag List</a></h2>
+<div class="blockbody settings_form_border">
+</div>
+<div id="similar_threads">
+<h4 class="threadinfohead blockhead">Similar Threads</h4>
+<div id="similar_threads_list" class="thread_info_block blockbody formcontrols">
+<ol class="similar_threads">
+<li class="floatcontainer">
+<div class="titleblock">
+<h6><a href="https://www.rune-server.ee/runescape-development/rs2-server/312022-combat-formula-damage-soaking.html" title="Now that most server's use a currect maxhit formula, we need a way to figure out the accuracy. Here is what I have in mind, written in plain english...">Combat Formula - Damage Soaking</a></h6>
+<div class="starter_forum">
+By Russian in forum RS2 Server
+</div>
+</div>
+<div class="dateblock">
+<span class="shade">Replies:</span> 23
+<div class="starter_forum">
+<span class="shade">Last Post:</span> 05-03-2011, <span class="time">04:21 AM</span>
+</div>
+</div>
+</li><li class="floatcontainer">
+<div class="titleblock">
+<h6><a href="https://www.rune-server.ee/runescape-development/rs2-server/help/290615-adjusting-combat-formulas.html" title="how do i change the bonuses of items or adjust combat formulas because at the moment whip is maxing like 34 with overloads and turmoil. and dds specs...">Adjusting Combat Formulas</a></h6>
+<div class="starter_forum">
+By nathanrr44 in forum Help
+</div>
+</div>
+<div class="dateblock">
+<span class="shade">Replies:</span> 3
+<div class="starter_forum">
+<span class="shade">Last Post:</span> 01-22-2011, <span class="time">12:50 AM</span>
+</div>
+</div>
+</li><li class="floatcontainer">
+<div class="titleblock">
+<h6><a href="https://www.rune-server.ee/runescape-development/rs2-server/281383-combat-formula.html" title="PLEASE READ THE THREAD BEFORE POSTING. THIS IS NOT A REFERENCE TO COMBAT LEVEL, NOR MAX HIT. 
+ 
+The one thing every server needs, but doesn't have,...">Combat formula</a></h6>
+<div class="starter_forum">
+By Colby in forum RS2 Server
+</div>
+</div>
+<div class="dateblock">
+<span class="shade">Replies:</span> 115
+<div class="starter_forum">
+<span class="shade">Last Post:</span> 01-03-2011, <span class="time">12:11 AM</span>
+</div>
+</div>
+</li><li class="floatcontainer">
+<div class="titleblock">
+<h6><a href="https://www.rune-server.ee/runescape-development/rs2-server/requests/228739-combat-formulas.html" title="I need the max hit formulas, timers, magic timers, all that stuff.">Combat Formulas?</a></h6>
+<div class="starter_forum">
+By Samdude151 in forum Requests
+</div>
+</div>
+<div class="dateblock">
+<span class="shade">Replies:</span> 6
+<div class="starter_forum">
+<span class="shade">Last Post:</span> 05-08-2010, <span class="time">04:28 PM</span>
+</div>
+</div>
+</li><li class="floatcontainer">
+<div class="titleblock">
+<h6><a href="https://www.rune-server.ee/runescape-development/rs2-server/tutorials/83483-changing-combat-formula.html" title="Purpose: to add new skills to the combat formula 
+Difficulty 1/10 
+Tested source: Czar 
+modified classes: Player.java 
+ 
+Step 1 
+In side of...">Changing the combat formula</a></h6>
+<div class="starter_forum">
+By Eternal Darknes in forum Tutorials
+</div>
+</div>
+<div class="dateblock">
+<span class="shade">Replies:</span> 3
+<div class="starter_forum">
+<span class="shade">Last Post:</span> 08-04-2008, <span class="time">08:47 PM</span>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="options_block_container">
+<div class="options_block">
+<table class="vbs_forumrow table vbs_thead">
+<tbody><tr class="vbs_forumrow vbs_thead">
+<td class="vbs_forumdata">
+Posting Permissions
+</td>
+</tr>
+</tbody></table>
+<table class="vbs_forumrow table">
+<tbody><tr class="vbs_forumrow">
+<td class="vbs_forumdata alt1">
+<div id="forumrules" class="info_subblock">
+<ul class="youcandoblock">
+<li>You <strong>may not</strong> post new threads</li>
+<li>You <strong>may not</strong> post replies</li>
+<li>You <strong>may not</strong> post attachments</li>
+<li>You <strong>may not</strong> edit your posts</li>
+<li>&nbsp;</li>
+</ul>
+<div class="bbcodeblock">
+<ul>
+<li><a rel="nofollow" href="https://www.rune-server.ee/misc.php?do=bbcode" target="_blank">BB code</a> is <strong>On</strong></li>
+<li><a rel="nofollow" href="https://www.rune-server.ee/misc.php?do=showsmilies" target="_blank">Smilies</a> are <strong>On</strong></li>
+<li><a rel="nofollow" href="https://www.rune-server.ee/misc.php?do=bbcode#imgcode" target="_blank">[IMG]</a> code is <strong>On</strong></li>
+<li><a rel="nofollow" href="https://www.rune-server.ee/misc.php?do=bbcode#videocode" target="_blank">[VIDEO]</a> code is <strong>On</strong></li>
+<li>HTML code is <strong>Off</strong></li>
+</ul>
+</div>
+<p class="rules_link"><a rel="nofollow" href="https://www.rune-server.ee/misc.php?do=showrules" target="_blank">Forum Rules</a></p>
+</div>
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</div>
+<div style="clear: left">
+<div style="text-align: center; margin-top: 10px;"></div>
+</div>
+<div id="footer" class="floatcontainer footer">
+<form action="https://www.rune-server.ee/forum.php" method="get" id="footer_select" class="footer_select">
+<select name="styleid" onchange="switch_id(this, 'style')">
+<optgroup label="Quick Style Chooser"><option class="hidden"></option></optgroup>
+<option value="6" class="">-- BlueFox</option>
+<option value="9" class="">---- GoldFox</option>
+<option value="10" class="">---- RedFox</option>
+<option value="11" class="" selected="selected">---- Bright Bluefox</option>
+<option value="1" class="">-- Default Style</option>
+<option value="13" class="">-- Ambient Lighting</option>
+<option value="14" class="">---- Ocean</option>
+<option value="15" class="">---- Gold</option>
+<option value="16" class="">---- Bright</option>
+</select>
+</form>
+<ul id="footer_links" class="footer_links">
+<li><a href="https://www.rune-server.ee/">Rune-Server</a></li>
+<li><a href="https://www.rune-server.ee/runescape-development/rs2-server/informative-threads/688072-archive-combat-formulas.html#top" onclick="document.location.hash='top'; return false;">Top</a></li>
+</ul>
+<script type="text/javascript">
+	<!--
+		// Main vBulletin Javascript Initialization
+		vBulletin_init();
+	//-->
+	</script>
+</div>
+</div> 
+<div class="below_body">
+<div id="footer_time" class="shade footer_time">All times are GMT +2. The time now is <span class="time">05:56 PM</span>.</div>
+<div id="footer_copyright" class="shade footer_copyright">
+
+Powered by vBulletin®<br>Copyright ©2000 - 2023, Jelsoft Enterprises Ltd.<div>We are not affiliated with Jagex nor RuneScape. RuneScape is a registered trademarks of Jagex.</div>
+
+</div>
+<div id="footer_morecopyright" class="shade footer_morecopyright">
+
+
+</div>
+</div>
+
+
+</body></html>

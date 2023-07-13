@@ -1,0 +1,40 @@
+{
+    "6492": {
+      "id": 6492,
+      "name": "Kree'arra",
+      "attacks": [
+        {
+          "style": "ranged",
+          "max_hit": 69,
+          "typeless": false
+        },
+        {
+          "style": "ranged_magic",
+          "max_hit": 21,
+          "typeless": false
+        },
+        {
+          "style": "melee_unknown",
+          "max_hit": 26,
+          "typeless": false
+        }
+      ],
+      "attack_speed": 3,
+      "attack_level": 300,
+      "strength_level": 200,
+      "defence_level": 260,
+      "magic_level": 200,
+      "ranged_level": 380,
+      "attack_bonus": 136,
+      "strength_bonus": 12,
+      "attack_magic": 0,
+      "magic_bonus": 0,
+      "attack_ranged": 120,
+      "ranged_bonus": 50,
+      "defence_stab": 180,
+      "defence_slash": 180,
+      "defence_crush": 180,
+      "defence_magic": 200,
+      "defence_ranged": 200,
+    }
+  }

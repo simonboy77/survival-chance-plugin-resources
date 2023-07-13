@@ -1,0 +1,226 @@
++121 magic defence
+lvl 88 magic
+lvl 94 def
+block attack style
+
+lvl 7 dark wizard https://oldschool.runescape.wiki/w/Dark_wizard
+attack speed 4 ticks (2.4s) ?? Looks lik
+
+manual tracking:
+8 hits, 400 misses
+1.96%   98.04%
+
+software tracking 1:
+time past 02:01:14 (7274s)
+hits taken 66
+hits done 7274 / 2.4 = ~3030
+60/3030 = ~0,0198 or 1.98%
+
+software tracking 2:
+took about 06:08:12
+hitCounter: 201, gametick: 36724
+totalHits = 36724 / 4 = 9181
+(201 / 9181) * 100 = 2,189303997%
+
+hitCounter: 1, gametick: 176
+hitCounter: 2, gametick: 212
+hitCounter: 3, gametick: 328
+hitCounter: 4, gametick: 423
+hitCounter: 5, gametick: 428
+hitCounter: 6, gametick: 472
+hitCounter: 7, gametick: 476
+hitCounter: 8, gametick: 740
+hitCounter: 9, gametick: 780
+hitCounter: 10, gametick: 864
+hitCounter: 11, gametick: 1287
+hitCounter: 12, gametick: 1472
+hitCounter: 13, gametick: 2051
+hitCounter: 14, gametick: 2284
+hitCounter: 15, gametick: 2384
+hitCounter: 16, gametick: 2416
+hitCounter: 17, gametick: 2591
+hitCounter: 18, gametick: 2908
+hitCounter: 19, gametick: 3103
+hitCounter: 20, gametick: 3352
+hitCounter: 21, gametick: 3416
+hitCounter: 22, gametick: 3632
+hitCounter: 23, gametick: 3779
+hitCounter: 24, gametick: 3896
+hitCounter: 25, gametick: 3944
+hitCounter: 26, gametick: 4004
+hitCounter: 27, gametick: 4052
+hitCounter: 28, gametick: 4188
+hitCounter: 29, gametick: 4271
+hitCounter: 30, gametick: 4324
+hitCounter: 31, gametick: 4340
+hitCounter: 32, gametick: 4947
+hitCounter: 33, gametick: 5475
+hitCounter: 34, gametick: 5660
+hitCounter: 35, gametick: 5772
+hitCounter: 36, gametick: 5975
+hitCounter: 37, gametick: 6539
+hitCounter: 38, gametick: 6824
+hitCounter: 39, gametick: 7172
+hitCounter: 40, gametick: 7183
+hitCounter: 41, gametick: 7752
+hitCounter: 42, gametick: 7996
+hitCounter: 43, gametick: 8303
+hitCounter: 44, gametick: 8396
+hitCounter: 45, gametick: 8492
+hitCounter: 46, gametick: 8504
+hitCounter: 47, gametick: 8908
+hitCounter: 48, gametick: 9540
+hitCounter: 49, gametick: 9551
+hitCounter: 50, gametick: 9720
+hitCounter: 51, gametick: 9952
+hitCounter: 52, gametick: 10019
+hitCounter: 53, gametick: 10651
+hitCounter: 54, gametick: 10832
+hitCounter: 55, gametick: 11331
+hitCounter: 56, gametick: 11384
+hitCounter: 57, gametick: 11592
+hitCounter: 58, gametick: 11748
+hitCounter: 59, gametick: 11879
+hitCounter: 60, gametick: 12080
+hitCounter: 61, gametick: 12236
+hitCounter: 62, gametick: 12491
+hitCounter: 63, gametick: 12720
+hitCounter: 64, gametick: 12884
+hitCounter: 65, gametick: 13039
+hitCounter: 66, gametick: 13432
+hitCounter: 67, gametick: 13500
+hitCounter: 68, gametick: 13616
+hitCounter: 69, gametick: 13667
+hitCounter: 70, gametick: 13796
+hitCounter: 71, gametick: 13876
+hitCounter: 72, gametick: 13984
+hitCounter: 73, gametick: 14287
+hitCounter: 74, gametick: 14300
+hitCounter: 75, gametick: 14412
+hitCounter: 76, gametick: 14556
+hitCounter: 77, gametick: 14656
+hitCounter: 78, gametick: 14915
+hitCounter: 79, gametick: 14944
+hitCounter: 80, gametick: 15491
+hitCounter: 81, gametick: 15624
+hitCounter: 82, gametick: 15628
+hitCounter: 83, gametick: 15680
+hitCounter: 84, gametick: 15764
+hitCounter: 85, gametick: 15880
+hitCounter: 86, gametick: 15892
+hitCounter: 87, gametick: 15916
+hitCounter: 88, gametick: 15940
+hitCounter: 89, gametick: 16324
+hitCounter: 90, gametick: 16475
+hitCounter: 91, gametick: 16572
+hitCounter: 92, gametick: 16872
+hitCounter: 93, gametick: 16968
+hitCounter: 94, gametick: 16983
+hitCounter: 95, gametick: 16992
+hitCounter: 96, gametick: 17116
+hitCounter: 97, gametick: 17236
+hitCounter: 98, gametick: 17468
+hitCounter: 99, gametick: 17488
+hitCounter: 100, gametick: 17679
+hitCounter: 101, gametick: 17696
+hitCounter: 102, gametick: 17704
+hitCounter: 103, gametick: 18076
+hitCounter: 104, gametick: 18175
+hitCounter: 105, gametick: 18264
+hitCounter: 106, gametick: 18288
+hitCounter: 107, gametick: 18480
+hitCounter: 108, gametick: 18524
+hitCounter: 109, gametick: 18576
+hitCounter: 110, gametick: 18712
+hitCounter: 111, gametick: 19091
+hitCounter: 112, gametick: 19244
+hitCounter: 113, gametick: 19515
+hitCounter: 114, gametick: 19712
+hitCounter: 115, gametick: 20724
+hitCounter: 116, gametick: 20803
+hitCounter: 117, gametick: 21024
+hitCounter: 118, gametick: 21064
+hitCounter: 119, gametick: 21399
+hitCounter: 120, gametick: 21592
+hitCounter: 121, gametick: 21688
+hitCounter: 122, gametick: 21716
+hitCounter: 123, gametick: 21875
+hitCounter: 124, gametick: 21936
+hitCounter: 125, gametick: 21952
+hitCounter: 126, gametick: 22359
+hitCounter: 127, gametick: 22408
+hitCounter: 128, gametick: 22720
+hitCounter: 129, gametick: 22872
+hitCounter: 130, gametick: 22919
+hitCounter: 131, gametick: 23020
+hitCounter: 132, gametick: 23631
+hitCounter: 133, gametick: 23904
+hitCounter: 134, gametick: 24460
+hitCounter: 135, gametick: 24507
+hitCounter: 136, gametick: 24524
+hitCounter: 137, gametick: 24636
+hitCounter: 138, gametick: 25068
+hitCounter: 139, gametick: 25103
+hitCounter: 140, gametick: 25128
+hitCounter: 141, gametick: 25256
+hitCounter: 142, gametick: 25304
+hitCounter: 143, gametick: 25328
+hitCounter: 144, gametick: 25511
+hitCounter: 145, gametick: 25608
+hitCounter: 146, gametick: 25712
+hitCounter: 147, gametick: 25756
+hitCounter: 148, gametick: 26088
+hitCounter: 149, gametick: 26343
+hitCounter: 150, gametick: 26380
+hitCounter: 151, gametick: 26512
+hitCounter: 152, gametick: 26752
+hitCounter: 153, gametick: 26871
+hitCounter: 154, gametick: 27096
+hitCounter: 155, gametick: 27395
+hitCounter: 156, gametick: 27540
+hitCounter: 157, gametick: 28171
+hitCounter: 158, gametick: 28248
+hitCounter: 159, gametick: 28368
+hitCounter: 160, gametick: 28480
+hitCounter: 161, gametick: 28596
+hitCounter: 162, gametick: 28915
+hitCounter: 163, gametick: 29004
+hitCounter: 164, gametick: 29419
+hitCounter: 165, gametick: 29516
+hitCounter: 166, gametick: 29892
+hitCounter: 167, gametick: 29975
+hitCounter: 168, gametick: 29980
+hitCounter: 169, gametick: 30088
+hitCounter: 170, gametick: 30268
+hitCounter: 171, gametick: 30308
+hitCounter: 172, gametick: 30316
+hitCounter: 173, gametick: 30519
+hitCounter: 174, gametick: 30572
+hitCounter: 175, gametick: 31023
+hitCounter: 176, gametick: 31492
+hitCounter: 177, gametick: 31600
+hitCounter: 178, gametick: 31759
+hitCounter: 179, gametick: 31916
+hitCounter: 180, gametick: 31948
+hitCounter: 181, gametick: 32116
+hitCounter: 182, gametick: 32548
+hitCounter: 183, gametick: 32735
+hitCounter: 184, gametick: 33396
+hitCounter: 185, gametick: 33399
+hitCounter: 186, gametick: 33464
+hitCounter: 187, gametick: 33700
+hitCounter: 188, gametick: 33863
+hitCounter: 189, gametick: 33908
+hitCounter: 190, gametick: 34008
+hitCounter: 191, gametick: 34375
+hitCounter: 192, gametick: 34552
+hitCounter: 193, gametick: 34871
+hitCounter: 194, gametick: 35000
+hitCounter: 195, gametick: 35411
+hitCounter: 196, gametick: 35508
+hitCounter: 197, gametick: 35939
+hitCounter: 198, gametick: 36264
+hitCounter: 199, gametick: 36675
+hitCounter: 200, gametick: 36704
+hitCounter: 201, gametick: 36724
+

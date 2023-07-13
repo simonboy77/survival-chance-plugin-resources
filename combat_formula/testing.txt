@@ -1,0 +1,9 @@
++115 stab defence
++125 slash defence
++137 crush
++135 range
++121 magic defence (black wizard)
++134 magic defence (blue wizard) 
+lvl 88 magic
+lvl 94 def
+block attack style

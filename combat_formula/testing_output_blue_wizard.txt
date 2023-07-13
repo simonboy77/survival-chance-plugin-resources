@@ -1,0 +1,256 @@
++134 magic defence
+lvl 88 magic
+lvl 94 def
+block attack style
+
+lvl 9 blue wizard https://oldschool.runescape.wiki/w/Wizard
+attack speed 4 ticks (2.4s)
+
+
+analysis:
+hit 219 on tick 36296 was the last hit
+36296 / 4 = 9074 total attacks
+219 / 9074 = 0,024134891 (~2.41% chance to hit)
+
+compensating for the misses before the first hit and after the last hit
+36296 / (219 - 1) = ~166 ticks between hits on average
+we should add 166 to the total (166/2 to the start and 166/2 to the end)
+36296 + 166 = 36462
+36462 / 4 = 9115.5 total attacks
+219 / 9115.5 = 0,024025012 (~2.40% chance to hit)
+
+
+compensating for the zero hit?
+zeroInclusiveHits = 219 + (219 / 6) = 255.5
+ticksBetweenHits = 36296 / (255.5 - 1)
+totalTicks = 36296 + ticksBetweenHits
+totalAttacks = totalTicks / 4
+hitChance = zeroInclusiveHits / totalAttacks = 0,028047168 (~2.80%)
+
+
+output:
+hit 1 on tick 0
+hit 2 on tick 128
+hit 3 on tick 196
+hit 4 on tick 340
+hit 5 on tick 444
+hit 6 on tick 708
+hit 7 on tick 724
+hit 8 on tick 968
+hit 9 on tick 996
+hit 10 on tick 1328
+hit 11 on tick 1500
+hit 12 on tick 1748
+hit 13 on tick 1804
+hit 14 on tick 1944
+hit 15 on tick 1992
+hit 16 on tick 2188
+hit 17 on tick 2400
+hit 18 on tick 2452
+hit 19 on tick 2524
+hit 20 on tick 2748
+hit 21 on tick 3260
+hit 22 on tick 3616
+hit 23 on tick 3688
+hit 24 on tick 3852
+hit 25 on tick 4112
+hit 26 on tick 4136
+hit 27 on tick 4148
+Dr Jekyll is not a monster
+hit 28 on tick 4476
+hit 29 on tick 4500
+hit 30 on tick 4564
+hit 31 on tick 4780
+hit 32 on tick 5068
+hit 33 on tick 5188
+hit 34 on tick 5776
+hit 35 on tick 6032
+hit 36 on tick 6224
+hit 37 on tick 6336
+hit 38 on tick 6532
+hit 39 on tick 6536
+hit 40 on tick 6736
+hit 41 on tick 6964
+hit 42 on tick 7160
+hit 43 on tick 7244
+hit 44 on tick 7568
+hit 45 on tick 7596
+hit 46 on tick 7652
+hit 47 on tick 7664
+hit 48 on tick 7864
+hit 49 on tick 7872
+hit 50 on tick 8012
+hit 51 on tick 8492
+hit 52 on tick 8692
+hit 53 on tick 8724
+hit 54 on tick 9084
+hit 55 on tick 9160
+hit 56 on tick 9212
+hit 57 on tick 9440
+hit 58 on tick 9608
+hit 59 on tick 9620
+hit 60 on tick 9652
+hit 61 on tick 9664
+hit 62 on tick 9668
+hit 63 on tick 9792
+hit 64 on tick 10072
+hit 65 on tick 10164
+hit 66 on tick 10472
+hit 67 on tick 10520
+hit 68 on tick 10568
+hit 69 on tick 11008
+hit 70 on tick 11092
+Capt' Arnav is not a monster
+hit 71 on tick 11276
+hit 72 on tick 11572
+hit 73 on tick 12196
+hit 74 on tick 12236
+hit 75 on tick 12436
+hit 76 on tick 12880
+hit 77 on tick 13068
+hit 78 on tick 13436
+hit 79 on tick 13752
+hit 80 on tick 14168
+hit 81 on tick 14256
+hit 82 on tick 14268
+hit 83 on tick 14796
+hit 84 on tick 15116
+hit 85 on tick 15168
+hit 86 on tick 15344
+hit 87 on tick 15432
+hit 88 on tick 15636
+hit 89 on tick 15868
+hit 90 on tick 16052
+hit 91 on tick 16084
+hit 92 on tick 16140
+hit 93 on tick 16464
+hit 94 on tick 16564
+hit 95 on tick 16812
+hit 96 on tick 16824
+hit 97 on tick 16864
+hit 98 on tick 17296
+hit 99 on tick 17412
+hit 100 on tick 17576
+hit 101 on tick 17768
+hit 102 on tick 17900
+hit 103 on tick 17912
+hit 104 on tick 18264
+hit 105 on tick 18332
+hit 106 on tick 18792
+hit 107 on tick 18948
+hit 108 on tick 19452
+hit 109 on tick 19580
+hit 110 on tick 19652
+hit 111 on tick 19864
+hit 112 on tick 20068
+hit 113 on tick 20160
+hit 114 on tick 20388
+hit 115 on tick 20484
+hit 116 on tick 20552
+hit 117 on tick 20568
+hit 118 on tick 20788
+hit 119 on tick 20944
+hit 120 on tick 21020
+hit 121 on tick 21044
+hit 122 on tick 21092
+hit 123 on tick 21112
+Quiz Master is not a monster
+hit 124 on tick 21348
+hit 125 on tick 21780
+hit 126 on tick 21856
+hit 127 on tick 21924
+hit 128 on tick 22244
+hit 129 on tick 22444
+hit 130 on tick 22488
+hit 131 on tick 22504
+hit 132 on tick 22568
+hit 133 on tick 22584
+hit 134 on tick 23092
+hit 135 on tick 23252
+hit 136 on tick 23376
+hit 137 on tick 23892
+hit 138 on tick 23960
+hit 139 on tick 24088
+hit 140 on tick 24156
+hit 141 on tick 24304
+hit 142 on tick 24316
+hit 143 on tick 24440
+hit 144 on tick 24636
+hit 145 on tick 24760
+hit 146 on tick 24776
+hit 147 on tick 24836
+hit 148 on tick 24864
+hit 149 on tick 24888
+hit 150 on tick 24932
+hit 151 on tick 25108
+hit 152 on tick 25172
+hit 153 on tick 25236
+hit 154 on tick 25312
+hit 155 on tick 25324
+hit 156 on tick 25548
+hit 157 on tick 25980
+hit 158 on tick 26264
+hit 159 on tick 26304
+hit 160 on tick 26340
+hit 161 on tick 26392
+hit 162 on tick 26888
+hit 163 on tick 27136
+hit 164 on tick 27848
+hit 165 on tick 27992
+hit 166 on tick 28068
+hit 167 on tick 28084
+hit 168 on tick 28196
+hit 169 on tick 28228
+hit 170 on tick 28256
+hit 171 on tick 28536
+hit 172 on tick 28688
+hit 173 on tick 28836
+hit 174 on tick 29056
+hit 175 on tick 29192
+hit 176 on tick 29304
+hit 177 on tick 29348
+hit 178 on tick 29472
+hit 179 on tick 29508
+Sergeant Damien is not a monster
+hit 180 on tick 29784
+hit 181 on tick 29924
+hit 182 on tick 30012
+hit 183 on tick 30244
+hit 184 on tick 30412
+hit 185 on tick 30516
+hit 186 on tick 30712
+hit 187 on tick 30720
+hit 188 on tick 30928
+hit 189 on tick 30976
+hit 190 on tick 31004
+hit 191 on tick 31028
+hit 192 on tick 31124
+hit 193 on tick 31144
+hit 194 on tick 31464
+hit 195 on tick 31576
+hit 196 on tick 31916
+hit 197 on tick 32104
+hit 198 on tick 32292
+hit 199 on tick 32836
+hit 200 on tick 32888
+hit 201 on tick 32924
+hit 202 on tick 32944
+hit 203 on tick 32948
+hit 204 on tick 33172
+hit 205 on tick 33464
+hit 206 on tick 33788
+hit 207 on tick 33848
+hit 208 on tick 33948
+hit 209 on tick 34588
+hit 210 on tick 34632
+hit 211 on tick 34664
+hit 212 on tick 34776
+hit 213 on tick 35136
+hit 214 on tick 35452
+hit 215 on tick 35508
+hit 216 on tick 35868
+hit 217 on tick 36100
+Dunce is not a monster
+hit 218 on tick 36288
+hit 219 on tick 36296
+
