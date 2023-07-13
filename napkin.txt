@@ -1,0 +1,124 @@
+IMPORTANT
+- There is a chance to miss, this doesnt affect the chance to still hit a zero after a succesful accuracy roll
+- When calculating more than 1 hit ahead, there is a chance that the player will hit ring of life range before all hits
+- DONE Should the phoenix necklace also be included? YES
+- PVP and multi-combat
+- Protection prayers
+- Poison/Venom
+- DONE Stat drops/level ups in defence or magic
+- DONE Player equipment
+- DONE HP Change up/down
+- DONE HP Level up
+- Attack style change (block gives +defence, controlled gives +1 defence)
+- Prayer change (protection or magic/defence buff)
+- show lowest hp possible?
+- Follow the attack speed of the monster with the highest max hit when attacked by
+mulitple monsters
+
+Just calculating how likely every hit is to happen will not give correct results of when the player will survive/trigger/die.
+Because when you are calculating 4 hits ahead, but after 2 hits the RoL triggers (or the player dies), all possibilities 
+after those 2 hits never happen, thus taking those into account is incorrect.
+
+Optimization option: Check if curHit + (maxHit * remainingHits) == SURVIVAL, then we don't need to
+go through all options. Just add however many hit options could happen from the current hit to the
+SURVIVAL chance and move on to the next hit
+
+For multiple opponents make an array with min- and maxDamage pairs that indicate the hits that are gonna take place
+ie: two enemies, A hits 8 with speed 2.4s, B hits 5 with speed 3.6s.
+in 10 seconds:
+A hits at most ceil(10 / 2.4) = 5 -> at 0.0s 2.4s 4.8s 7.2s 9.6s
+B hits at most ceil(10 / 3.6) = 3 -> at 0.0s 3.6s 7.2s
+
+so the min-maxDamage array will look as follows:
+{
+    0, 8 // A hit 1 at 0.0s
+    0, 5 // B hit 1 at 0.0s
+    0, 8 // A hit 2 at 2.4s
+    0, 5 // B hit 2 at 3.6s
+    0, 8 // A hit 3 at 4.8s
+    0, 8 // A hit 4 at 7.2s
+    0, 5 // B hit 3 at 7.2s
+    0, 8 // A hit 5 at 9.6s
+}
+
+
+
+TESTING on jail guard (8 hits):
+from 33hp
+stable: safety: 99.99847412109375, escape: 0.00152587890625, die: 0.0, totalHits: 65536.0, iterations: 87380
+new:    safety: 99.99847412109375, escape: 0.00152587890625, die: 0.0, totalHits: 65536.0, iterations: 8
+
+Check dps calculator plugin to see how they collect weapon stats
+
+Special monsters:
+- Verac, Dharok
+- Zulrah (phases)
+
+
+
+
+
+maxHp = 99
+rolTriggerHp = floor(maxHp / 10)
+
+
+
+if
+currentHp - maxHit < 10
+			20
+
+
+2-29
+trigger, not trigger, kill
+
+
+
+0 / 1 / 2
+
+currentHp = 2 hp
+1/3 die
+1/3 trigger
+1/3 nothing
+
+what is the % chance i die in the next X amount of hits
+
+
+if(maxHit < 10){
+	return false;
+}
+
+
+
+
+0 / 1 / 2
+what can this npc hit in 2 hits? (9 different hits)
+hit 0 - 1 - 2 - 3 - 4
+occ 1 - 2 - 3 - 2 - 1
+
+0 / 1 / 2
+what can this npc hit in 3 hits? (27 different hits)
+hit 0 - 1 - 2 - 3 - 4 - 5 - 6
+occ 1 - 3 - 6 - 7 - 6 - 3 - 1
+
+
+0 / 1 / 2 / 3
+what can this npc hit in 2 hits? (16 different hits)
+hit 0 - 1 - 2 - 3 - 4 - 5 - 6
+occ 1 - 2 - 3 - 4 - 3 - 2 - 1
+
+0 / 1 / 2 / 3 / 4
+what can this npc hit in 2 hits? (25 different hits)
+hit 0 - 1 - 2 - 3 - 4 - 5 - 6 - 7 - 8
+occ 1 - 2 - 3 - 4 - 5 - 
+
+0 / 1 / 2 / 3 / 4 / ... / 700
+what can this npc hit in 2 hits?
+hit 0 - 1 - 2 - 3 - 4 - 5 - 6 - 7 - 8 ... 700
+occ 1 - 2 - 3 - 4 - 5 - 6 - 7 - 8 - 9 ... 701
+
+maxHit * numberOfHits
+floor(maxHit / 2)
+
+
+
+https://stats.stackexchange.com/questions/208720/calculate-probability-of-random-numbers-adding-up-to-or-being-greater-than-anoth
